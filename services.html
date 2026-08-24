@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interior and exterior painting, cabinet painting, spray finishes, commercial painting, and specialty services across Toronto and the GTA. Free estimates." />
+  <title>Services — Cornerstone Painting</title>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=37" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <button class="nav-estimate-btn" id="open-estimate" type="button" aria-label="Get a free estimate">Estimate</button>
+      <a href="index.html" class="logo">
+        <img src="logo.webp" alt="Cornerstone Pro Painting" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown"><a href="services.html" class="active">Services</a><ul class="nav-dropdown"><li><a href="service-full-house-painting.html">Full House Painting</a></li><li><a href="service-bedroom-painting.html">Bedroom Painting</a></li><li><a href="service-living-room-painting.html">Living Room Painting</a></li><li><a href="service-dining-room-painting.html">Dining Room Painting</a></li><li><a href="service-kitchen-painting.html">Kitchen Painting</a></li><li><a href="service-bathroom-painting.html">Bathroom Painting</a></li><li><a href="service-basement-painting.html">Basement Painting</a></li><li><a href="service-hallway-painting.html">Hallway Painting</a></li><li><a href="service-staircase-painting.html">Staircase Painting</a></li><li><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a></li><li><a href="service-drywall-repair.html">Drywall Repair</a></li></ul></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="areas.html">Areas</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:+14372423829" class="nav-phone">437-242-3829</a>
+        <div class="nav-sep"></div>
+        <div class="nav-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+        <div class="nav-sep"></div>
+        <a href="index.html#contact" class="nav-cta">Free Quote</a>
+      </div>
+      <label class="hamburger" for="menu-toggle"><span></span><span></span><span></span></label>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="menu-toggle" />
+  <div class="mobile-menu">
+    <div class="mobile-svc-row">
+      <a href="services.html">Services</a>
+      <button class="mobile-svc-toggle" id="mobile-svc-toggle" aria-label="Toggle services menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+    <div class="mobile-svc-sub" id="mobile-svc-sub"><a href="service-full-house-painting.html">Full House Painting</a><a href="service-bedroom-painting.html">Bedroom Painting</a><a href="service-living-room-painting.html">Living Room Painting</a><a href="service-dining-room-painting.html">Dining Room Painting</a><a href="service-kitchen-painting.html">Kitchen Painting</a><a href="service-bathroom-painting.html">Bathroom Painting</a><a href="service-basement-painting.html">Basement Painting</a><a href="service-hallway-painting.html">Hallway Painting</a><a href="service-staircase-painting.html">Staircase Painting</a><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a><a href="service-drywall-repair.html">Drywall Repair</a></div>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="areas.html">Areas</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html#contact" class="m-cta">Free Quote</a>
+  </div>
+
+  <!-- Floating phone -->
+  <a href="tel:+14372423829" class="float-cta" aria-label="Call us">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+  </a>
+
+  <!-- Services Overview Grid -->
+  <section class="svc-overview">
+    <div class="svc-overview-header">
+      <div class="svc-overview-label">
+        <span class="svc-label-line"></span>
+        <span>WHAT WE DO</span>
+      </div>
+      <h1 class="svc-overview-headline">Our Services</h1>
+      <p class="svc-overview-sub">Professional painting services across Toronto and the GTA. Clear estimates, careful prep, professional results.</p>
+    </div>
+    <div class="svc-overview-grid">
+
+      <div class="svc-card">
+        <h3 class="svc-card-title">Interior Painting</h3>
+        <p>Walls, ceilings, trim, and doors. Full surface prep, furniture protection, and cleanup on every job.</p>
+        <div class="svc-card-actions">
+          <a href="index.html#contact" class="svc-link-primary">GET ESTIMATE &nbsp;→</a>
+          <a href="gallery.html" class="svc-link-secondary">VIEW PHOTOS</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <h3 class="svc-card-title">Exterior Painting</h3>
+        <p>Siding, brick, stucco, and trim. Durable coatings suited to Toronto's climate, with full masking included.</p>
+        <div class="svc-card-actions">
+          <a href="index.html#contact" class="svc-link-primary">GET ESTIMATE &nbsp;→</a>
+          <a href="gallery.html" class="svc-link-secondary">VIEW PHOTOS</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <h3 class="svc-card-title">Cabinet Painting</h3>
+        <p>Kitchen and bathroom cabinets. Doors removed, sanded, primed, and finished for a smooth durable result.</p>
+        <div class="svc-card-actions">
+          <a href="index.html#contact" class="svc-link-primary">GET ESTIMATE &nbsp;→</a>
+          <a href="gallery.html" class="svc-link-secondary">VIEW PHOTOS</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <h3 class="svc-card-title">Expert Spray Finishes</h3>
+        <p>Factory-quality HVLP finishes on cabinetry, built-ins, doors, and millwork. Results a brush can't match.</p>
+        <div class="svc-card-actions">
+          <a href="index.html#contact" class="svc-link-primary">GET ESTIMATE &nbsp;→</a>
+          <a href="gallery.html" class="svc-link-secondary">VIEW PHOTOS</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <h3 class="svc-card-title">Commercial Painting</h3>
+        <p>Offices, retail, condos, and multi-unit buildings. Flexible scheduling — evenings and weekends available.</p>
+        <div class="svc-card-actions">
+          <a href="index.html#contact" class="svc-link-primary">GET ESTIMATE &nbsp;→</a>
+        </div>
+      </div>
+
+      <div class="svc-card">
+        <h3 class="svc-card-title">Specialty Services</h3>
+        <p>Drywall repairs, popcorn ceiling removal, taping &amp; painting, and wood staining — all under one roof.</p>
+        <div class="svc-card-actions">
+          <a href="index.html#contact" class="svc-link-primary">GET ESTIMATE &nbsp;→</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interior Painting — linen, text left / img right -->
+  <section class="svc-detail" id="interior">
+    <div class="svc-detail-inner">
+      <div class="svc-detail-text">
+        <div class="svc-detail-label">
+          <span class="svc-label-line"></span>
+          <span>WALLS, CEILINGS, TRIM &amp; DOORS</span>
+        </div>
+        <h2>Interior Painting</h2>
+        <p>Our interior painting service covers walls, ceilings, trim, doors, and baseboards. We begin every job with thorough surface preparation — patching holes, sanding rough areas, priming bare wood and drywall — because we know a flawless finish starts long before the first coat of paint.</p>
+        <a href="index.html#contact" class="btn-svc-cta">GET FREE ESTIMATE — UNDER 12H &nbsp;→</a>
+      </div>
+      <div class="svc-detail-img">
+        <img src="interior-painting.webp" alt="Interior painting — bright elegant room with ornate ceiling" class="svc-photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Exterior Painting — dark, img left / text right -->
+  <section class="svc-detail svc-detail-dark" id="exterior">
+    <div class="svc-detail-inner">
+      <div class="svc-detail-img">
+        <img src="exterior-painting.webp" alt="Exterior painting — painter on ladder painting house siding" class="svc-photo" />
+      </div>
+      <div class="svc-detail-text">
+        <div class="svc-detail-label">
+          <span class="svc-label-line"></span>
+          <span>SIDING, BRICK, STUCCO &amp; TRIM</span>
+        </div>
+        <h2>Exterior Painting</h2>
+        <p>Our expert exterior painting revitalizes your home's appearance, increasing its value and making a great first impression. We apply high-quality stains and paints to protect your surfaces from weather damage while maintaining their beauty. Count on our team for punctual project completion and clear communication throughout the process.</p>
+        <a href="index.html#contact" class="btn-svc-cta">GET FREE ESTIMATE — UNDER 12H &nbsp;→</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cabinet Painting — linen, text left / img right -->
+  <section class="svc-detail">
+    <div class="svc-detail-inner">
+      <div class="svc-detail-text">
+        <div class="svc-detail-label">
+          <span class="svc-label-line"></span>
+          <span>KITCHEN &amp; BATHROOM CABINETS</span>
+        </div>
+        <h2>Cabinet Painting</h2>
+        <p>Transform your kitchen or bathroom without the cost of replacement. We remove all cabinet doors and hardware, sand surfaces to the ideal profile, apply a high-build primer, and finish with a factory-smooth topcoat. The result is a durable, flawless finish that holds up to daily use.</p>
+        <a href="index.html#contact" class="btn-svc-cta">GET FREE ESTIMATE — UNDER 12H &nbsp;→</a>
+      </div>
+      <div class="svc-detail-img">
+        <img src="cabinet-painting.jpg" alt="Cabinet painting — painter spray finishing kitchen cabinets" class="svc-photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Expert Spray Finishes — dark, img left / text right -->
+  <section class="svc-detail svc-detail-dark">
+    <div class="svc-detail-inner">
+      <div class="svc-detail-img">
+        <img src="spray-finishes.jpg" alt="Expert spray finishes — HVLP spray gun applying finish" class="svc-photo" />
+      </div>
+      <div class="svc-detail-text">
+        <div class="svc-detail-label">
+          <span class="svc-label-line"></span>
+          <span>KITCHENS, BUILT-INS &amp; MILLWORK</span>
+        </div>
+        <h2>Expert Spray Finishes</h2>
+        <p>We use professional HVLP spray equipment to deliver factory-quality finishes on cabinetry, built-ins, doors, trim, and millwork. Spray finishing achieves a level of smoothness that brush and roller simply cannot — no brush marks, no texture, just glass-smooth results.</p>
+        <a href="index.html#contact" class="btn-svc-cta">GET FREE ESTIMATE — UNDER 12H &nbsp;→</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Painting — linen, text left / feature card right -->
+  <section class="svc-detail svc-commercial" id="commercial">
+    <div class="svc-commercial-inner">
+      <div class="svc-detail-text">
+        <div class="svc-detail-label">
+          <span class="svc-label-line"></span>
+          <span>OFFICES, RETAIL &amp; MULTI-UNIT</span>
+        </div>
+        <h2>Commercial Painting</h2>
+        <p>We work with property managers, business owners, and condo boards across the GTA on commercial and multi-unit painting projects of all sizes. Every job is priced clearly, staffed properly, and completed on schedule.</p>
+        <p>We offer flexible scheduling — including evenings and weekends — to minimise disruption to tenants and customers. Full surface prep, low-VOC paint options, and cleanup are included on every commercial job.</p>
+        <ul class="svc-checklist">
+          <li>Office spaces &amp; retail fit-outs</li>
+          <li>Condo corridors, lobbies &amp; amenity rooms</li>
+          <li>Multi-unit residential buildings</li>
+          <li>Flexible after-hours scheduling</li>
+          <li>Volume pricing available</li>
+        </ul>
+        <a href="index.html#contact" class="btn-svc-cta">GET FREE ESTIMATE — UNDER 12H &nbsp;→</a>
+      </div>
+      <div class="svc-commercial-card">
+        <p class="svc-commercial-card-label">WHY CHOOSE US FOR COMMERCIAL WORK</p>
+        <div class="svc-commercial-features">
+          <div class="svc-comm-feat">
+            <div class="svc-comm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong>Fully Insured &amp; WSIB Compliant</strong>
+              <p>Full liability coverage. All documentation provided upfront for your records.</p>
+            </div>
+          </div>
+          <div class="svc-comm-feat">
+            <div class="svc-comm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <strong>On-Time, On-Budget</strong>
+              <p>Detailed written quotes. No surprises — we flag scope changes before we act on them.</p>
+            </div>
+          </div>
+          <div class="svc-comm-feat">
+            <div class="svc-comm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <strong>Experienced Commercial Crews</strong>
+              <p>Dedicated teams who understand working around occupied spaces, tenants, and business hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialty Services -->
+  <section class="svc-specialty">
+    <div class="svc-specialty-inner">
+      <div class="svc-specialty-header">
+        <div class="svc-detail-label">
+          <span class="svc-label-line"></span>
+          <span>MORE SERVICES</span>
+        </div>
+        <h2>Specialty Services</h2>
+        <p class="svc-specialty-sub">Beyond painting, we handle the prep and finishing work that most painters subcontract or skip. One crew, one invoice, no coordination headaches.</p>
+      </div>
+
+      <div class="svc-spec-grid">
+
+        <div class="svc-spec-card">
+          <div class="svc-spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
+          <p class="svc-spec-label">Drywall Repairs</p>
+          <p>Holes, cracks, water stains, and damaged corners — patched, sanded, and primed before we paint. The repair becomes invisible. We handle everything from small nail pops to large section replacements.</p>
+        </div>
+
+        <div class="svc-spec-card">
+          <div class="svc-spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <p class="svc-spec-label">Popcorn Ceiling Removal</p>
+          <p>Textured ceilings scraped clean, skimmed smooth, and painted — leaving a flat, modern finish. We contain the mess completely. Most rooms are done in a single day with minimal disruption.</p>
+        </div>
+
+        <div class="svc-spec-card">
+          <div class="svc-spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="2" x2="22" y2="6"/><path d="M7.5 20.5 19 9l-4-4L3.5 16.5 2 22z"/></svg>
+          </div>
+          <p class="svc-spec-label">Taping &amp; Painting</p>
+          <p>New drywall installations need taping, mudding, and sanding before paint can go on. We do the full sequence in-house — no waiting on a separate taper. Seams disappear completely under the final coat.</p>
+        </div>
+
+        <div class="svc-spec-card">
+          <div class="svc-spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <p class="svc-spec-label">Staining</p>
+          <p>Decks, fences, hardwood floors, and interior wood features — properly sanded, cleaned, and stained to bring out the natural grain. Solid stains, semi-transparent, and clear-coat finishes all available.</p>
+        </div>
+
+      </div>
+
+      <div class="svc-specialty-cta">
+        <a href="index.html#contact" class="btn-spec-cta">GET A FREE ESTIMATE FOR ANY SERVICE &nbsp;→</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band cta-band-sm" id="contact">
+    <div class="section-inner">
+      <div class="cta-inner">
+        <div>
+          <h2>Ready to Get Started?</h2>
+          <p>Free estimate, no pressure. We respond within 12 hours with a clear written quote.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+14372423829" class="btn btn-dark">Call 437-242-3829</a>
+          <a href="mailto:hello@cornerstonepainting.ca" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">Send an Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <span class="footer-brand-main">CORNERSTONE</span>
+          <span class="footer-brand-sub">PAINTING</span>
+        </div>
+        <p class="footer-tagline">Painters you can trust in Toronto.<br>Serving the GTA since 2009.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Services</h5>
+        <ul>
+          <li><a href="services.html#interior">Interior Painting</a></li>
+          <li><a href="services.html#exterior">Exterior Painting</a></li>
+          <li><a href="services.html">Cabinet Painting</a></li>
+          <li><a href="services.html">Expert Spray Finishes</a></li>
+          <li><a href="services.html#commercial">Commercial Painting</a></li>
+          <li><a href="services.html">Specialty Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          <li><a href="areas.html">Areas Served</a></li>
+          <li><a href="services.html#process">Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-contact">
+        <h5 class="footer-col-head">Contact</h5>
+        <a href="tel:+14372423829" class="footer-phone">437-242-3829</a>
+        <ul class="footer-areas">
+          <li>Toronto, ON</li>
+          <li>Richmond Hill</li>
+          <li>Vaughan</li>
+          <li>Woodbridge</li>
+          <li>King City</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span>© 2026 Cornerstone Painting. All rights reserved.</span>
+        <span>Toronto &amp; GTA Professional Painters</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Estimate Drawer -->
+  <div class="est-overlay" id="est-overlay" role="dialog" aria-modal="true" aria-label="Get a free estimate">
+    <div class="est-drawer">
+      <span class="est-handle"></span>
+      <div class="est-header">
+        <div class="est-header-text">
+          <span class="est-title">Get Your Free Estimate</span>
+          <span class="est-sub">2 min form — we reply within 12 hours</span>
+        </div>
+        <button class="est-close" id="est-close" aria-label="Close estimate form">&#x2715;</button>
+      </div>
+      <!-- Step indicators -->
+      <div class="est-steps">
+        <div class="est-step est-step--active" data-step="1">
+          <span class="est-step-dot">1</span>
+          <span class="est-step-label">The Job</span>
+        </div>
+        <div class="est-step-line"></div>
+        <div class="est-step" data-step="2">
+          <span class="est-step-dot">2</span>
+          <span class="est-step-label">Details</span>
+        </div>
+        <div class="est-step-line"></div>
+        <div class="est-step" data-step="3">
+          <span class="est-step-dot">3</span>
+          <span class="est-step-label">Contact</span>
+        </div>
+      </div>
+      <form id="est-form" novalidate>
+        <!-- Step 1: Service + Timeline -->
+        <div class="est-panel" data-panel="1">
+          <p class="est-q">What would you like painted?</p>
+          <div class="est-cards" id="est-service">
+            <label class="est-card">
+              <input type="radio" name="service" value="Interior Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E0;</span><span>Interior</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Exterior Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E1;</span><span>Exterior</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Cabinet Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1FA9F;</span><span>Cabinets</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Commercial Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E2;</span><span>Commercial</span></div>
+            </label>
+          </div>
+          <!-- Rooms (shown only for Interior) -->
+          <div class="est-rooms-wrap" id="est-rooms-wrap" style="display:none">
+            <p class="est-q">How many rooms?</p>
+            <div class="est-pills" id="est-rooms">
+              <label class="est-pill"><input type="radio" name="rooms" value="1" /><span>1</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="2" /><span>2</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="3" /><span>3</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="4" /><span>4</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="5+" /><span>5+</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="Whole house" /><span>Whole house</span></label>
+            </div>
+          </div>
+          <p class="est-q">When are you looking to start?</p>
+          <div class="est-pills" id="est-timeline">
+            <label class="est-pill"><input type="radio" name="timeline" value="ASAP" /><span>ASAP</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="Within 1 month" /><span>Within 1 month</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="1&#x2013;3 months" /><span>1&#x2013;3 months</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="Just planning" /><span>Just planning</span></label>
+          </div>
+          <button type="button" class="btn btn-accent est-next" data-target="2" style="width:100%;justify-content:center">Next &#x2192;</button>
+        </div>
+        <!-- Step 2: Details -->
+        <div class="est-panel" data-panel="2" style="display:none">
+          <label class="est-label">Current wall / surface colour</label>
+          <input type="text" class="est-input" name="current_color" placeholder="e.g. Builder white, beige, not sure" />
+          <label class="est-label">Wall / surface condition</label>
+          <div class="est-pills">
+            <label class="est-pill"><input type="radio" name="condition" value="Good" /><span>Good</span></label>
+            <label class="est-pill"><input type="radio" name="condition" value="Minor repairs needed" /><span>Minor repairs</span></label>
+            <label class="est-pill"><input type="radio" name="condition" value="Major repairs needed" /><span>Major repairs</span></label>
+          </div>
+          <label class="est-label">Your area / neighbourhood</label>
+          <input type="text" class="est-input" name="area" placeholder="e.g. North York, Mississauga, Toronto" />
+          <label class="est-label">Add photos (optional, up to 3)</label>
+          <div class="est-upload" id="est-upload-zone">
+            <input type="file" id="est-photos" name="photos" accept="image/*" multiple />
+            <div class="est-upload-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span>Tap to add photos</span>
+              <span class="est-upload-hint">JPG or PNG, max 5 MB each</span>
+            </div>
+            <div class="est-previews" id="est-previews"></div>
+          </div>
+          <label class="est-label">Additional notes (optional)</label>
+          <textarea class="est-input" name="notes" rows="3" placeholder="Anything else we should know&#x2026;"></textarea>
+          <div class="est-nav-row">
+            <button type="button" class="est-back" data-target="1">&#x2190; Back</button>
+            <button type="button" class="btn btn-accent est-next" data-target="3">Next &#x2192;</button>
+          </div>
+        </div>
+        <!-- Step 3: Contact -->
+        <div class="est-panel" data-panel="3" style="display:none">
+          <p class="est-q">Almost done &#x2014; where should we send your estimate?</p>
+          <div class="est-row-2">
+            <div>
+              <label class="est-label">First name *</label>
+              <input type="text" class="est-input" name="first_name" placeholder="Jay" required />
+            </div>
+            <div>
+              <label class="est-label">Last name</label>
+              <input type="text" class="est-input" name="last_name" placeholder="Gonzalez" />
+            </div>
+          </div>
+          <label class="est-label">Phone number *</label>
+          <input type="tel" class="est-input" name="phone" placeholder="416-555-1234" />
+          <label class="est-label">Email address</label>
+          <input type="email" class="est-input" name="email" placeholder="you@email.com" />
+          <div class="est-nav-row">
+            <button type="button" class="est-back" data-target="2">&#x2190; Back</button>
+            <button type="submit" class="btn btn-accent est-submit-btn" id="est-submit">Send Request</button>
+          </div>
+          <p class="est-fine">Free estimate &#x2014; no obligation. We reply within 12 hours.</p>
+          <div id="est-status"></div>
+        </div>
+      </form>
+      <!-- Success state -->
+      <div class="est-success" id="est-success" style="display:none">
+        <div class="est-success-icon">&#x2713;</div>
+        <h3>Request Sent!</h3>
+        <p>We&#x2019;ll reach out within 12 hours with your free written estimate.</p>
+        <a href="tel:+14372423829" class="btn btn-accent" style="display:inline-flex;margin:0 auto">Call Us: 437-242-3829</a>
+      </div>
+    </div>
+  </div>
+  <script src="estimate.js"></script>
+
+  <script src="animations.js"></script>
+  <script>
+    var toggle = document.getElementById('mobile-svc-toggle');
+    var sub = document.getElementById('mobile-svc-sub');
+    if (toggle && sub) {
+      toggle.addEventListener('click', function() {
+        toggle.classList.toggle('open');
+        sub.classList.toggle('open');
+      });
+    }
+  </script>
+
+</body>
+</html>
