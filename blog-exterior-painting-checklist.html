@@ -320,13 +320,25 @@
   <script>
     var toggle = document.getElementById('mobile-svc-toggle');
     var sub = document.getElementById('mobile-svc-sub');
+    var menuChk = document.getElementById('menu-toggle');
+    function resetSvcMenu() {
+      if (toggle) toggle.classList.remove('open');
+      if (sub) sub.classList.remove('open');
+    }
     if (toggle && sub) {
       toggle.addEventListener('click', function() {
         toggle.classList.toggle('open');
         sub.classList.toggle('open');
       });
     }
+    if (menuChk) {
+      menuChk.addEventListener('change', function() {
+        if (!this.checked) resetSvcMenu();
+      });
+    }
+    window.addEventListener('pageshow', resetSvcMenu);
   </script>
+
 
 </body>
 </html>

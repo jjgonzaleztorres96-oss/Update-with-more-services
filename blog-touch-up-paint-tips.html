@@ -213,5 +213,20 @@
   </div>
   <script src="estimate.js"></script>
   <script src="animations.js"></script>
-</body>
+
+  <script>
+    (function(){
+      var toggle = document.getElementById('mobile-svc-toggle');
+      var sub    = document.getElementById('mobile-svc-sub');
+      var chk    = document.getElementById('menu-toggle');
+      if (!toggle || !sub) return;
+      toggle.addEventListener('click', function(){
+        var open = sub.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+      });
+      function reset(){ sub.classList.remove('open'); toggle.classList.remove('open'); }
+      if (chk) chk.addEventListener('change', function(){ if (!this.checked) reset(); });
+      window.addEventListener('pageshow', reset);
+    })();
+  </script></body>
 </html>
