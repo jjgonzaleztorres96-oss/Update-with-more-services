@@ -222,6 +222,7 @@ nav {
   .hamburger { display: flex; }
   #menu-toggle:checked ~ .mobile-menu { display: flex; }
   nav { height: 96px; }
+  .mobile-menu { top: 96px; }
   .nav-inner {
     display: flex;
     align-items: center;

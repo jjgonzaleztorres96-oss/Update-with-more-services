@@ -42,8 +42,8 @@
   </nav>
   <input type="checkbox" id="menu-toggle" />
   <div class="mobile-menu">
-    <a href="services.html" class="active">Services</a>
-    <div class="mobile-svc-sub"><a href="service-full-house-painting.html">Full House Painting</a><a href="service-bedroom-painting.html">Bedroom Painting</a><a href="service-living-room-painting.html">Living Room Painting</a><a href="service-dining-room-painting.html">Dining Room Painting</a><a href="service-kitchen-painting.html">Kitchen Painting</a><a href="service-bathroom-painting.html">Bathroom Painting</a><a href="service-basement-painting.html">Basement Painting</a><a href="service-hallway-painting.html">Hallway Painting</a><a href="service-staircase-painting.html">Staircase Painting</a><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a><a href="service-drywall-repair.html">Drywall Repair</a></div>
+    <div class="mobile-svc-row"><a href="services.html" class="active">Services</a><button class="mobile-svc-toggle" id="mobile-svc-toggle" aria-label="Toggle services menu"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button></div>
+    <div class="mobile-svc-sub" id="mobile-svc-sub"><a href="service-full-house-painting.html">Full House Painting</a><a href="service-bedroom-painting.html">Bedroom Painting</a><a href="service-living-room-painting.html">Living Room Painting</a><a href="service-dining-room-painting.html">Dining Room Painting</a><a href="service-kitchen-painting.html">Kitchen Painting</a><a href="service-bathroom-painting.html">Bathroom Painting</a><a href="service-basement-painting.html">Basement Painting</a><a href="service-hallway-painting.html">Hallway Painting</a><a href="service-staircase-painting.html">Staircase Painting</a><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a><a href="service-drywall-repair.html">Drywall Repair</a></div>
     <a href="about.html">About</a>
     <a href="gallery.html">Gallery</a>
     <a href="areas.html">Areas</a>
@@ -152,5 +152,20 @@
   </div>
   <script src="estimate.js"></script>
   <script src="animations.js"></script>
-</body>
+
+  <script>
+    (function(){
+      var toggle = document.getElementById('mobile-svc-toggle');
+      var sub    = document.getElementById('mobile-svc-sub');
+      var chk    = document.getElementById('menu-toggle');
+      if (!toggle || !sub) return;
+      toggle.addEventListener('click', function(){
+        var open = sub.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+      });
+      function reset(){ sub.classList.remove('open'); toggle.classList.remove('open'); }
+      if (chk) chk.addEventListener('change', function(){ if (!this.checked) reset(); });
+      window.addEventListener('pageshow', reset);
+    })();
+  </script></body>
 </html>
