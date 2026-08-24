@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Cornerstone Painting's project gallery — interior, exterior, and cabinet painting across Toronto and the GTA." />
+  <title>Gallery — Cornerstone Painting</title>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=37" />
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <button class="nav-estimate-btn" id="open-estimate" type="button" aria-label="Get a free estimate">Estimate</button>
+      <a href="index.html" class="logo"><img src="logo.webp" alt="Cornerstone Pro Painting" class="logo-img"></a>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown"><a href="services.html">Services</a><ul class="nav-dropdown"><li><a href="service-full-house-painting.html">Full House Painting</a></li><li><a href="service-bedroom-painting.html">Bedroom Painting</a></li><li><a href="service-living-room-painting.html">Living Room Painting</a></li><li><a href="service-dining-room-painting.html">Dining Room Painting</a></li><li><a href="service-kitchen-painting.html">Kitchen Painting</a></li><li><a href="service-bathroom-painting.html">Bathroom Painting</a></li><li><a href="service-basement-painting.html">Basement Painting</a></li><li><a href="service-hallway-painting.html">Hallway Painting</a></li><li><a href="service-staircase-painting.html">Staircase Painting</a></li><li><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a></li><li><a href="service-drywall-repair.html">Drywall Repair</a></li></ul></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="areas.html">Areas</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:+14372423829" class="nav-phone">437-242-3829</a>
+        <div class="nav-sep"></div>
+        <div class="nav-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+        <div class="nav-sep"></div>
+        <a href="index.html#contact" class="nav-cta">Free Quote</a>
+      </div>
+      <label class="hamburger" for="menu-toggle"><span></span><span></span><span></span></label>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="menu-toggle" />
+  <div class="mobile-menu">
+    <div class="mobile-svc-row">
+      <a href="services.html">Services</a>
+      <button class="mobile-svc-toggle" id="mobile-svc-toggle" aria-label="Toggle services menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+    <div class="mobile-svc-sub" id="mobile-svc-sub"><a href="service-full-house-painting.html">Full House Painting</a><a href="service-bedroom-painting.html">Bedroom Painting</a><a href="service-living-room-painting.html">Living Room Painting</a><a href="service-dining-room-painting.html">Dining Room Painting</a><a href="service-kitchen-painting.html">Kitchen Painting</a><a href="service-bathroom-painting.html">Bathroom Painting</a><a href="service-basement-painting.html">Basement Painting</a><a href="service-hallway-painting.html">Hallway Painting</a><a href="service-staircase-painting.html">Staircase Painting</a><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a><a href="service-drywall-repair.html">Drywall Repair</a></div>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="areas.html">Areas</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html#contact" class="m-cta">Free Quote</a>
+  </div>
+
+  <a href="tel:+14372423829" class="float-cta" aria-label="Call us">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 5.94 5.94l1.78-1.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <section class="gallery-section">
+    <div class="section-inner">
+
+      <div class="gallery-hd">
+        <p class="section-label">Our Work</p>
+        <h2 class="gallery-hd-title">Project Gallery</h2>
+        <p class="gallery-hd-sub">A selection of projects across Toronto and the GTA.</p>
+      </div>
+
+      <div class="gallery-filter-bar">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All <span class="fc">24</span></button>
+          <button class="filter-btn" data-filter="interior">Interior <span class="fc">20</span></button>
+          <button class="filter-btn" data-filter="exterior">Exterior <span class="fc">14</span></button>
+        </div>
+        <p class="gallery-count"><span id="gc-num">34</span> projects</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- ── Interior ── -->
+        <div class="gallery-divider" data-for="interior">Interior</div>
+
+        <div class="gallery-card gc-wide" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-foyer.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Grand Foyer — Vaughan</p></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-bedroom-gray.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Master Bedroom — Richmond Hill</p></div>
+        </div>
+
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-room-green.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Guest Room — North York</p></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-room-pink.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Bedroom Refresh — Woodbridge</p></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-hallway.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Hallway &amp; Art Wall — King City</p></div>
+        </div>
+
+        <div class="gallery-card gc-wide" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-office.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Modern Office Space — Toronto</p></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-loft.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Loft Interior — Downtown Toronto</p></div>
+        </div>
+
+        <div class="gallery-card gc-wide" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-room-beige.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Living Room Repaint — Etobicoke</p></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-hallway2.webp')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Upper Hallway — Vaughan</p></div>
+        </div>
+
+        <div class="gallery-card gc-wide" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-1.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Dining Room Repaint After — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-1.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-2.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Dining Room Before — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-2.jpg">Read More</button></div>
+        </div>
+
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-3.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Entryway Repaint — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-3.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-4.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Condo Living Room — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-4.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-5.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Commercial Loft Space — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-5.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card gc-wide" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-6.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Garage Interior & Epoxy Floor — GTA</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-6.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-7.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Garage Walls & Door — GTA</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-7.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card gc-wide" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-8.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Living Room — Sage Green, Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-8.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-9.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Hallway — Sage Green, Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-9.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-10.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Upper Hallway — Fresh White, Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-10.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card gc-wide" data-cat="interior">
+          <div class="gc-img" style="background-image:url('gallery-int-real-11.jpg')"></div>
+          <span class="gc-badge">Interior</span>
+          <div class="gc-label"><p>Basement — Deep Blue, Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-int-real-11.jpg">Read More</button></div>
+        </div>
+
+        <!-- ── Exterior ── -->
+        <div class="gallery-divider" data-for="exterior">Exterior</div>
+
+        <div class="gallery-card gc-wide" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-house.webp')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Full Exterior Repaint — Toronto</p></div>
+        </div>
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-deck.webp')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Deck &amp; Siding — North York</p></div>
+        </div>
+
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-garage-brown.webp')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Garage Door Refinish — Richmond Hill</p></div>
+        </div>
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-porch.webp')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Front Porch &amp; Trim — Etobicoke</p></div>
+        </div>
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-garage-black.webp')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Garage Door — Vaughan</p></div>
+        </div>
+
+        <div class="gallery-card gc-wide" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-5.jpg');background-position:center top"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Full Exterior Repaint — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-5.jpg">Read More</button></div>
+        </div>
+
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-1.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Deck Restoration Before — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-1.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-2.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Deck Staining After — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-2.jpg">Read More</button></div>
+        </div>
+
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-3.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Deck &amp; Stairs Before — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-3.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-4.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Deck &amp; Stairs After — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-4.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card gc-wide" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-7.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Arched Front Entry — Black Door Refinish, Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-7.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-6.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Front Door Detail — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-6.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card gc-wide" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-8.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Porch & Railing Repaint — Black, Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-8.jpg">Read More</button></div>
+        </div>
+        <div class="gallery-card" data-cat="exterior">
+          <div class="gc-img" style="background-image:url('gallery-ext-real-9.jpg')"></div>
+          <span class="gc-badge">Exterior</span>
+          <div class="gc-label"><p>Porch Floor & Railing — Toronto</p>
+          <button class="gc-more-btn" data-key="gallery-ext-real-9.jpg">Read More</button></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band cta-band-sm" id="contact">
+    <div class="section-inner">
+      <div class="cta-inner">
+        <div>
+          <h2>Like What You See?</h2>
+          <p>Get a free estimate and let's talk about what we can do for your space.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+14372423829" class="btn btn-dark">Call 437-242-3829</a>
+          <a href="mailto:hello@cornerstonepainting.ca" class="btn btn-outline">Send an Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <span class="footer-brand-main">CORNERSTONE</span>
+          <span class="footer-brand-sub">PAINTING</span>
+        </div>
+        <p class="footer-tagline">Painters you can trust in Toronto.<br>Serving the GTA since 2009.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Services</h5>
+        <ul>
+          <li><a href="services.html#interior">Interior Painting</a></li>
+          <li><a href="services.html#exterior">Exterior Painting</a></li>
+          <li><a href="services.html">Cabinet Painting</a></li>
+          <li><a href="services.html">Expert Spray Finishes</a></li>
+          <li><a href="services.html#commercial">Commercial Painting</a></li>
+          <li><a href="services.html">Specialty Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          <li><a href="areas.html">Areas Served</a></li>
+          <li><a href="services.html#process">Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-contact">
+        <h5 class="footer-col-head">Contact</h5>
+        <a href="tel:+14372423829" class="footer-phone">437-242-3829</a>
+        <ul class="footer-areas">
+          <li>Toronto, ON</li>
+          <li>Richmond Hill</li>
+          <li>Vaughan</li>
+          <li>Woodbridge</li>
+          <li>King City</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span>© 2026 Cornerstone Painting. All rights reserved.</span>
+        <span>Toronto &amp; GTA Professional Painters</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Filter buttons ──
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        let count = 0;
+        document.querySelectorAll('.gallery-card').forEach(card => {
+          const show = filter === 'all' || card.dataset.cat === filter;
+          card.style.display = show ? '' : 'none';
+          if (show) count++;
+        });
+        document.querySelectorAll('.gallery-divider').forEach(d => {
+          d.style.display = (filter === 'all' || d.dataset.for === filter) ? '' : 'none';
+        });
+        const numEl = document.getElementById('gc-num');
+        if (numEl) numEl.textContent = count;
+      });
+    });
+
+    // ── Lightbox ──
+    (function () {
+      // Build overlay
+      var overlay = document.createElement('div');
+      overlay.className = 'lb-overlay';
+      overlay.innerHTML =
+        '<img class="lb-img" src="data:," alt="Project photo" />' +
+        '<button class="lb-close" aria-label="Close">&#x2715;</button>' +
+        '<button class="lb-arrow lb-prev" aria-label="Previous">&#8249;</button>' +
+        '<button class="lb-arrow lb-next" aria-label="Next">&#8250;</button>' +
+        '<span class="lb-counter"></span>';
+      document.body.appendChild(overlay);
+
+      var lbImg     = overlay.querySelector('.lb-img');
+      var lbCounter = overlay.querySelector('.lb-counter');
+      var current   = 0;
+      var photos    = [];
+
+      function getVisiblePhotos() {
+        return [...document.querySelectorAll('.gallery-card')].filter(function (c) {
+          var gcImg = c.querySelector('.gc-img');
+          return gcImg && gcImg.style.backgroundImage && c.style.display !== 'none';
+        });
+      }
+
+      function extractUrl(card) {
+        var bg = card.querySelector('.gc-img').style.backgroundImage;
+        return bg.replace(/^url\(['"]?/, '').replace(/['"]?\)$/, '');
+      }
+
+      function show(index) {
+        lbImg.style.opacity = '0';
+        setTimeout(function () {
+          lbImg.src = extractUrl(photos[index]);
+          lbImg.style.opacity = '1';
+          lbCounter.textContent = (index + 1) + ' / ' + photos.length;
+        }, 120);
+      }
+
+      function open(index) {
+        photos = getVisiblePhotos();
+        current = index;
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        show(current);
+      }
+
+      function close() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      function prev() { current = (current - 1 + photos.length) % photos.length; show(current); }
+      function next() { current = (current + 1) % photos.length; show(current); }
+
+      // Click each card to open
+      document.querySelectorAll('.gallery-card').forEach(function (card) {
+        card.addEventListener('click', function () {
+          var visible = getVisiblePhotos();
+          var idx = visible.indexOf(card);
+          if (idx !== -1) open(idx);
+        });
+      });
+
+      overlay.querySelector('.lb-close').addEventListener('click', close);
+      overlay.querySelector('.lb-prev').addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+      overlay.querySelector('.lb-next').addEventListener('click', function (e) { e.stopPropagation(); next(); });
+      overlay.addEventListener('click', function (e) { if (e.target === overlay || e.target === lbImg) close(); });
+
+      // Keyboard
+      document.addEventListener('keydown', function (e) {
+        if (!overlay.classList.contains('open')) return;
+        if (e.key === 'Escape')      close();
+        if (e.key === 'ArrowLeft')   prev();
+        if (e.key === 'ArrowRight')  next();
+      });
+
+      // Touch swipe
+      var touchX = 0;
+      overlay.addEventListener('touchstart', function (e) { touchX = e.touches[0].clientX; }, { passive: true });
+      overlay.addEventListener('touchend', function (e) {
+        var diff = touchX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
+      }, { passive: true });
+    })();
+  </script>
+
+  <!-- Estimate Drawer -->
+  <div class="est-overlay" id="est-overlay" role="dialog" aria-modal="true" aria-label="Get a free estimate">
+    <div class="est-drawer">
+      <span class="est-handle"></span>
+      <div class="est-header">
+        <div class="est-header-text">
+          <span class="est-title">Get Your Free Estimate</span>
+          <span class="est-sub">2 min form — we reply within 12 hours</span>
+        </div>
+        <button class="est-close" id="est-close" aria-label="Close estimate form">&#x2715;</button>
+      </div>
+      <!-- Step indicators -->
+      <div class="est-steps">
+        <div class="est-step est-step--active" data-step="1">
+          <span class="est-step-dot">1</span>
+          <span class="est-step-label">The Job</span>
+        </div>
+        <div class="est-step-line"></div>
+        <div class="est-step" data-step="2">
+          <span class="est-step-dot">2</span>
+          <span class="est-step-label">Details</span>
+        </div>
+        <div class="est-step-line"></div>
+        <div class="est-step" data-step="3">
+          <span class="est-step-dot">3</span>
+          <span class="est-step-label">Contact</span>
+        </div>
+      </div>
+      <form id="est-form" novalidate>
+        <!-- Step 1: Service + Timeline -->
+        <div class="est-panel" data-panel="1">
+          <p class="est-q">What would you like painted?</p>
+          <div class="est-cards" id="est-service">
+            <label class="est-card">
+              <input type="radio" name="service" value="Interior Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E0;</span><span>Interior</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Exterior Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E1;</span><span>Exterior</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Cabinet Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1FA9F;</span><span>Cabinets</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Commercial Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E2;</span><span>Commercial</span></div>
+            </label>
+          </div>
+          <!-- Rooms (shown only for Interior) -->
+          <div class="est-rooms-wrap" id="est-rooms-wrap" style="display:none">
+            <p class="est-q">How many rooms?</p>
+            <div class="est-pills" id="est-rooms">
+              <label class="est-pill"><input type="radio" name="rooms" value="1" /><span>1</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="2" /><span>2</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="3" /><span>3</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="4" /><span>4</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="5+" /><span>5+</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="Whole house" /><span>Whole house</span></label>
+            </div>
+          </div>
+          <p class="est-q">When are you looking to start?</p>
+          <div class="est-pills" id="est-timeline">
+            <label class="est-pill"><input type="radio" name="timeline" value="ASAP" /><span>ASAP</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="Within 1 month" /><span>Within 1 month</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="1&#x2013;3 months" /><span>1&#x2013;3 months</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="Just planning" /><span>Just planning</span></label>
+          </div>
+          <button type="button" class="btn btn-accent est-next" data-target="2" style="width:100%;justify-content:center">Next &#x2192;</button>
+        </div>
+        <!-- Step 2: Details -->
+        <div class="est-panel" data-panel="2" style="display:none">
+          <label class="est-label">Current wall / surface colour</label>
+          <input type="text" class="est-input" name="current_color" placeholder="e.g. Builder white, beige, not sure" />
+          <label class="est-label">Wall / surface condition</label>
+          <div class="est-pills">
+            <label class="est-pill"><input type="radio" name="condition" value="Good" /><span>Good</span></label>
+            <label class="est-pill"><input type="radio" name="condition" value="Minor repairs needed" /><span>Minor repairs</span></label>
+            <label class="est-pill"><input type="radio" name="condition" value="Major repairs needed" /><span>Major repairs</span></label>
+          </div>
+          <label class="est-label">Your area / neighbourhood</label>
+          <input type="text" class="est-input" name="area" placeholder="e.g. North York, Mississauga, Toronto" />
+          <label class="est-label">Add photos (optional, up to 3)</label>
+          <div class="est-upload" id="est-upload-zone">
+            <input type="file" id="est-photos" name="photos" accept="image/*" multiple />
+            <div class="est-upload-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span>Tap to add photos</span>
+              <span class="est-upload-hint">JPG or PNG, max 5 MB each</span>
+            </div>
+            <div class="est-previews" id="est-previews"></div>
+          </div>
+          <label class="est-label">Additional notes (optional)</label>
+          <textarea class="est-input" name="notes" rows="3" placeholder="Anything else we should know&#x2026;"></textarea>
+          <div class="est-nav-row">
+            <button type="button" class="est-back" data-target="1">&#x2190; Back</button>
+            <button type="button" class="btn btn-accent est-next" data-target="3">Next &#x2192;</button>
+          </div>
+        </div>
+        <!-- Step 3: Contact -->
+        <div class="est-panel" data-panel="3" style="display:none">
+          <p class="est-q">Almost done &#x2014; where should we send your estimate?</p>
+          <div class="est-row-2">
+            <div>
+              <label class="est-label">First name *</label>
+              <input type="text" class="est-input" name="first_name" placeholder="Jay" required />
+            </div>
+            <div>
+              <label class="est-label">Last name</label>
+              <input type="text" class="est-input" name="last_name" placeholder="Gonzalez" />
+            </div>
+          </div>
+          <label class="est-label">Phone number *</label>
+          <input type="tel" class="est-input" name="phone" placeholder="416-555-1234" />
+          <label class="est-label">Email address</label>
+          <input type="email" class="est-input" name="email" placeholder="you@email.com" />
+          <div class="est-nav-row">
+            <button type="button" class="est-back" data-target="2">&#x2190; Back</button>
+            <button type="submit" class="btn btn-accent est-submit-btn" id="est-submit">Send Request</button>
+          </div>
+          <p class="est-fine">Free estimate &#x2014; no obligation. We reply within 12 hours.</p>
+          <div id="est-status"></div>
+        </div>
+      </form>
+      <!-- Success state -->
+      <div class="est-success" id="est-success" style="display:none">
+        <div class="est-success-icon">&#x2713;</div>
+        <h3>Request Sent!</h3>
+        <p>We&#x2019;ll reach out within 12 hours with your free written estimate.</p>
+        <a href="tel:+14372423829" class="btn btn-accent" style="display:inline-flex;margin:0 auto">Call Us: 437-242-3829</a>
+      </div>
+    </div>
+  </div>
+  <script src="estimate.js"></script>
+
+  <script src="animations.js"></script>
+
+  <!-- ── Project Description Modal ── -->
+  <div id="gc-desc-bg" class="gc-desc-bg" role="dialog" aria-modal="true" aria-labelledby="gc-desc-title">
+    <div class="gc-desc-box">
+      <button class="gc-desc-close" id="gc-desc-close" aria-label="Close">&#x2715;</button>
+      <span class="gc-desc-badge" id="gc-desc-badge"></span>
+      <h2 class="gc-desc-title" id="gc-desc-title"></h2>
+      <div class="gc-desc-body" id="gc-desc-body"></div>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    /* ── SEO Project Descriptions ── */
+    var GC_DESCRIPTIONS = {
+      "gallery-int-real-1.jpg": {"cat": "Interior", "title": "Dining Room Repaint After — Toronto", "paragraphs": ["This stunning dining room transformation is one of our favourite completed projects from Toronto, and it perfectly illustrates what a professional paint job can do for a home's interior. When the homeowners first reached out to Cornerstone Pro Painting, they described a dining room that felt dated and disconnected from the rest of their updated home. The walls carried years of wear — scuffs, uneven patches, and a colour that no longer reflected their style. After a thorough consultation and colour-matching session, our team got to work, and the result you see here speaks entirely for itself.", "The warm neutral wall colour chosen for this project strikes that ideal balance between welcoming and sophisticated. It works beautifully with the room's natural light, the existing furniture tones, and the white trim that frames every corner with crisp precision. Achieving that level of trim detail is something that separates truly professional painters from casual DIY attempts. Our crew took the time to properly mask, cut in, and roll every surface — no shortcuts, no bleed lines, no uneven sheen. The finish is as smooth and consistent as you will find anywhere in Toronto, and that is a standard we hold on every single project we take on.", "Cornerstone Pro Painting has been serving homeowners across Toronto and the Greater Toronto Area since 2009, and interior dining room repaints are among our most requested services. We understand that the dining room is a gathering space — a room where families share meals and guests form first impressions of a home. That is why we approach every dining room project with the same level of care and intentionality that we bring to a high-profile commercial contract. Our team uses premium, low-VOC paints sourced from trusted Canadian suppliers, ensuring a healthy indoor environment alongside a finish that looks exceptional and lasts for years.", "Every project begins with a detailed walkthrough and a free estimate. We assess the current condition of the walls, identify any repairs needed before painting begins — whether that is skim-coating, sanding, or caulking gaps around trim — and outline a clear scope of work so homeowners know exactly what to expect. Our crew arrives on time, protects your floors and furnishings, and leaves the space cleaner than we found it. As licensed and insured painters operating across Toronto and the GTA, we carry full liability coverage and WSIB clearance, which means the homeowner is fully protected throughout the project.", "If you have been living with walls that no longer inspire you, a dining room repaint is one of the highest-impact, most cost-effective renovations you can make. A fresh coat of properly applied paint — with clean, sharp trim work — elevates a room more dramatically than almost any other single change. The before-and-after difference in a project like this is not subtle; it is transformative. Homeowners who invest in professional interior painting consistently report that the result far exceeded what they imagined a paint job could achieve.", "Whether you are preparing your Toronto home for sale, refreshing it after years of use, or simply ready for a change, the team at Cornerstone Pro Painting is ready to help. We offer free, no-obligation estimates and are happy to assist with colour selection as part of our service. Call us today at 437-242-3829 to schedule your consultation and take the first step toward a dining room you will love coming home to."]},
+      "gallery-int-real-2.jpg": {"cat": "Interior", "title": "Dining Room Before — Toronto", "paragraphs": ["Every great transformation has a starting point, and this dining room before photo from a Toronto home tells the story that the after image completes. The walls show the kind of gradual wear that accumulates in any well-lived-in home — faded colour, scuff marks along the lower sections, uneven patches where minor repairs were made over the years, and a dated tone that had simply run its course. For many homeowners, living with a room like this becomes so normal that it stops registering as a problem. It takes seeing the finished result to understand just how much the starting condition was holding the space back.", "This is exactly why the team at Cornerstone Pro Painting always documents the before condition of every project. It is not just about the contrast — though that contrast is always striking. It is about honesty and transparency with the homeowners we serve. When we walk through a space before work begins, we are identifying every surface condition that needs to be addressed before a brush ever touches the wall. Cracks, nail pops, water stains, peeling sections — all of these need proper remediation before painting begins, and skipping those steps is the most common reason DIY paint jobs look amateurish within months.", "In a dining room like this one, the trim had accumulated multiple layers of paint over the years, dulling its definition and causing the room to feel flat rather than finished. The junction between the ceiling and the wall was soft and irregular, and the baseboards showed the kind of yellowing that happens when lower-quality paints are exposed to years of light and traffic. These are exactly the details that professional painters Toronto homeowners trust with their homes take seriously. The preparation phase of any paint job accounts for a significant portion of the total project time — and rightfully so.", "Cornerstone Pro Painting has been completing interior painting projects across Toronto and the GTA since 2009, and our approach has always been prep-first. We have seen too many cases where a homeowner paid a lower-cost crew only to watch the paint peel, chip, or blister within a year because proper preparation was skipped. Our licensed and insured painters invest the time upfront to do the job right — filling, sanding, priming, and sealing before a single drop of finish coat is applied. The result is a paint job that not only looks beautiful on day one but maintains its appearance for many years to come.", "Looking at a room in this condition and imagining its potential is something our team genuinely enjoys. The bones of this Toronto dining room were always strong — the proportions, the natural light, the trim profiles. All it needed was the attention of skilled professionals who knew how to unlock what was already there. The transformation from this state to the finished result visible in the companion photo is the kind of work we are proud to put our name behind.", "If your dining room, living room, or any other interior space in your Toronto or GTA home is in a similar condition — or even worse — please do not wait to get in touch. Cornerstone Pro Painting offers free, no-obligation estimates and will give you an honest assessment of what your space needs and what it will look like when we are done. Call us at 437-242-3829 and let us talk about what we can do for your home."]},
+      "gallery-int-real-3.jpg": {"cat": "Interior", "title": "Entryway Repaint — Toronto", "paragraphs": ["The entryway of a home sets the tone for everything that follows. It is the first space a guest enters, the last space a homeowner passes through before leaving for the day, and one of the most overlooked areas when it comes to interior painting. In this Toronto project, the homeowners recognized that their front entryway had become a missed opportunity — walls that were scuffed, faded, and inconsistent in sheen gave visitors an impression that did not match the rest of the home's character. Reaching out to Cornerstone Pro Painting was the first step in correcting that, and what you see in this photo is the finished result of our team's work.", "Fresh paint on entryway walls does something that is hard to quantify but immediately felt: it creates a sense of arrival. The crisp, updated colour chosen for this Toronto entryway produces an immediate sense of cohesion and intention. The walls flow cleanly from the floor to the ceiling, the trim has been carefully cut in and finished with a semi-gloss sheen that provides both durability and a clean visual separation, and the overall effect is one of a home that is cared for and thoughtfully maintained. These are the details that matter, and they are the details that distinguish professional interior painting from a weekend DIY project.", "Cornerstone Pro Painting has been serving Toronto homeowners since 2009, and entryway repaints are among the most satisfying projects we complete. The scale is manageable, the transformation is immediate, and the impact on how a homeowner feels about their space is disproportionately large. We bring the same standards to a compact entry hall as we do to a full-home repaint: proper surface preparation, premium paints, clean masking, and a finish that holds up to the high-traffic wear that entryways inevitably endure. Our licensed and insured painters treat every surface with care — protecting your floors, sealing gaps around trim, and ensuring that the finished product is exactly what was discussed during the initial consultation.", "Colour selection for an entryway requires a specific kind of thinking. The space typically receives less natural light than other rooms, which means colour can read differently on these walls than it does on a sample chip or in a sunlit living room. Our team helps homeowners think through these considerations during the free estimate process. We have completed enough interior painting work across the GTA to offer guidance that goes beyond general advice and speaks to the specific conditions of your home. Whether you are drawn to soft neutrals, saturated earthy tones, or a bold accent that makes a statement from the moment the door opens, we can help you land on a choice you will love.", "Beyond the aesthetic, a freshly painted entryway is also a practical upgrade. Entry walls take more abuse than almost any other interior surface — coats get brushed against them, bags bump into them, boots kick up along the baseboards. Using the right paint product, applied correctly, means that cleanup is easy and the finish resists marking. This is the kind of long-term thinking that goes into every recommendation Cornerstone Pro Painting makes.", "To schedule a free estimate for your Toronto or GTA home's entryway — or any interior painting project — call Cornerstone Pro Painting at 437-242-3829. Our team is ready to help you make a great first impression every single day."]},
+      "gallery-int-real-4.jpg": {"cat": "Interior", "title": "Condo Living Room — Toronto", "paragraphs": ["Condo living in Toronto comes with its own unique set of painting considerations, and this project is a perfect example of how the right professional team can navigate them with ease. This Toronto condo living room received a full interior repaint as part of the homeowner's effort to personalize their space after purchase — a fresh take on the builder-grade finishes that come standard in most new condominium units. What you see in this photo is the result of careful planning, precise execution, and the kind of attention to detail that makes Cornerstone Pro Painting one of the most trusted names in interior painting across Toronto and the GTA.", "Painting a condo unit presents challenges that are different from a detached home. Building management often has rules about work hours, elevator access for materials, and the products that can be used within shared ventilation systems. Our team is experienced in working within these frameworks — coordinating with building staff, scheduling work in ways that minimize noise and disruption to neighbours, and using low-VOC paints that keep indoor air quality high for all residents sharing the building's systems. These are the practical details that separate experienced professional painters in Toronto from those who have not worked extensively in multi-unit residential settings.", "Cornerstone Pro Painting has been completing condo interior painting projects across downtown Toronto and the surrounding GTA since 2009, and we have developed a deep familiarity with the city's condo building stock — from older converted buildings in the east end to gleaming new high-rises in the downtown core. We know how ceilings are constructed, how trim profiles vary across eras of construction, and how to work efficiently in spaces where square footage is at a premium and storage for supplies is limited. Our crews bring exactly what they need, protect every surface, and work in a way that causes minimal disruption to the homeowner's routine.", "In this living room repaint, the homeowner chose an updated neutral colour that immediately made the space feel larger and more personalized than the builder white it replaced. The trim was refreshed in a crisp white semi-gloss, the ceiling was touched up where seams had become visible, and the entire room received a careful preparation treatment before any finish coat was applied. Our licensed and insured painters take surface prep seriously — we fill, sand, and prime before painting, because the longevity of any paint job depends entirely on what happens before the finish coat goes on. A beautiful living room that looks worn within a year is not a result we are willing to put our name beside.", "If you are a condo owner in Toronto looking to update your space — whether it is a single room refresh or a full unit repaint — Cornerstone Pro Painting is ready to help. We offer free, no-obligation estimates and can work with your building's specific requirements to ensure the project goes smoothly from start to finish. Our team is familiar with the pace of condo life in Toronto and we schedule projects around your needs, not ours. The difference between builder white and a professionally chosen, expertly applied colour is dramatic, and it is one of the best investments a condo owner can make.", "Call 437-242-3829 today to book your free estimate and discover why Toronto condo owners trust Cornerstone Pro Painting with their most important spaces."]},
+      "gallery-int-real-5.jpg": {"cat": "Interior", "title": "Commercial Loft Space — Toronto", "paragraphs": ["Large-scale commercial painting projects require a level of planning, logistics, and technical skill that goes well beyond residential work, and this Toronto commercial loft is a compelling example of what professional painters can achieve in a challenging environment. The space features soaring ceilings, expansive open walls, and the kind of industrial architecture that demands precision and consistency at scale — because in a space this large, any inconsistency in finish, texture, or sheen is immediately visible. Cornerstone Pro Painting was brought in to deliver a clean, fresh look that would serve the business using this space while protecting the building's structural surfaces for years to come.", "Working in a commercial loft environment means dealing with height, scale, and often an occupied or partially occupied space. Our team came equipped with the right tools for the job — proper scaffolding, commercial-grade extension equipment, and the spray and roll techniques that maintain a consistent finish across large surface areas. We planned the project in phases to minimize downtime for the client, working around their schedule and ensuring that the space remained functional throughout the painting process. This is the approach that professional commercial painters in Toronto need to take, and it is the approach that Cornerstone Pro Painting brings to every commercial contract we accept.", "The colour palette chosen for this loft project reinforces the industrial aesthetic of the space while giving it a clean, polished quality that aligns with a professional business environment. Fresh white walls against exposed structural elements create a backdrop that is versatile, bright, and timeless — the kind of finish that works equally well as an event venue, a creative studio, or a retail showroom. Our team helped guide the colour selection process based on the lighting conditions in the space, the way natural and artificial light moved through it at different times of day, and the existing architectural features that would be highlighted or softened by different colour choices.", "Cornerstone Pro Painting has been serving commercial clients across Toronto and the GTA since 2009, and our commercial painting division handles projects ranging from small professional offices to large industrial and loft spaces like this one. We are fully licensed and insured for commercial work, and every project is managed with a clear scope, timeline, and communication protocol so clients always know where the project stands. We understand that in a commercial context, delays cost money — which is why our crews are organized, efficient, and committed to finishing on schedule without cutting corners on quality.", "The commercial painting market in Toronto is competitive, but our reputation has been built on consistent results and the kind of client relationships that generate repeat business and referrals. Many of our commercial clients have worked with us multiple times across different properties, and that trust is something we earn project by project. Whether you are a property manager, a business owner, or a developer looking for reliable interior painting contractors in the GTA, Cornerstone Pro Painting has the experience and resources to deliver at any scale.", "To discuss your commercial painting project and receive a free, no-obligation estimate, call Cornerstone Pro Painting today at 437-242-3829. We are ready to bring the same quality and professionalism to your space that you see in this Toronto commercial loft project."]},
+      "gallery-int-real-6.jpg": {"cat": "Interior", "title": "Garage Interior & Epoxy Floor — GTA", "paragraphs": ["The garage is often the last space in a home to receive any aesthetic attention, treated more as a utility zone than as part of the living environment. But when a garage is transformed the way this GTA project was — with crisp white painted walls, a professionally applied gray epoxy floor coating, fresh paint on the stairs, and a fully refinished workshop area — it becomes something entirely different: a functional, clean, and genuinely impressive extension of the home. This is the kind of transformation that Cornerstone Pro Painting specializes in, and it is a service that more GTA homeowners are discovering every year.", "The epoxy floor coating is the centrepiece of this project, and it is a product that requires both the right materials and the right application process to achieve a result that lasts. Our team prepared the concrete slab thoroughly before any coating was applied — grinding, acid-etching, and cleaning the surface to ensure proper adhesion. A garage floor coating that is not applied over properly prepared concrete will peel and bubble within a season, wasting both the investment and the disruption of having the space out of commission. Our licensed and insured painters have completed numerous epoxy floor projects across the GTA and understand exactly what it takes to get a finish that stays beautiful through years of vehicle traffic, tool use, and the freeze-thaw cycles that are a reality of Ontario winters.", "The white wall paint was chosen to maximize the brightness of the space — a critical consideration in a garage that functions as both a parking area and a workshop. Proper lighting matters, but so does the reflectivity of the walls. Freshly painted white walls in a garage can transform a dim, depressing space into one that feels open and workable. The stairs and trim were finished to match, creating a coherent look that carries through every corner of the space. Every surface was properly prepared before painting — cleaned, sanded where needed, and primed to ensure adhesion on both the concrete block walls and the drywall sections above.", "Cornerstone Pro Painting has been serving homeowners across the Greater Toronto Area since 2009, and garage painting and floor coating projects are a service we have refined to a high standard. We understand that a garage is a working space, and we select products accordingly — paints and coatings that can withstand the impacts, moisture, and temperature fluctuations that garages endure. Our exterior and interior painting services extend well beyond the traditional walls and trim of the main living space, and a garage transformation like this one demonstrates the breadth of what professional painters in the GTA can do when they bring real expertise to the project.", "If you have been parking your car in a space that you are not proud to show visitors, or running a workshop in a room that feels more like a cave than a functional space, a garage interior paint and epoxy floor project could be exactly what changes that. The return on investment is substantial — both in terms of the enjoyment of the space and the appeal it adds to the home overall.", "Call Cornerstone Pro Painting at 437-242-3829 to schedule a free, no-obligation estimate for your GTA garage painting and floor coating project. Let us turn that underutilized space into something exceptional."]},
+      "gallery-int-real-7.jpg": {"cat": "Interior", "title": "Garage Walls & Door — GTA", "paragraphs": ["A clean, freshly painted garage makes a statement that extends well beyond the garage itself. The exterior-facing roll-up door and the interior walls of a garage are among the most visible functional surfaces a homeowner has, and yet they are routinely left to weather and fade while the rest of the home is maintained. This GTA project captures that close-up, satisfying result of a professional garage painting job done right — crisp white walls, a freshly painted white roll-up door, and a finish quality that holds up to daily use. It is the kind of detail work that Cornerstone Pro Painting is known for across the Greater Toronto Area.", "Painting a garage roll-up door is a more involved process than it might appear. The surface is textured, often heavily weathered, and subject to significant mechanical stress every time it opens and closes. Using the wrong paint product — or applying a quality product incorrectly — results in cracking and peeling within months. Our team selects products specifically formulated for metal and composite door surfaces, applies them over a properly cleaned and primed base, and ensures that the finish is flexible enough to move with the door through its operation cycle. The result you see in this photo is a door that looks freshly installed and will continue to look that way through multiple seasons of use.", "The interior walls of a garage endure a different kind of challenge. Dust, exhaust, moisture, and the general grime of a working space accumulate on surfaces that are rarely cleaned and rarely painted. Cornerstone Pro Painting approaches garage wall painting with the same preparation discipline we apply to any other surface — cleaning thoroughly, repairing any cracks or spalling in masonry, priming bare surfaces, and applying a finish product that provides both a clean look and durability against the harsh conditions of the space. The white finish seen in this photo immediately brightened the entire garage, making it easier to work in and easier to maintain.", "Cornerstone Pro Painting has been serving homeowners across the GTA since 2009, and our team understands the variety of garage construction types present in the region — from poured concrete block walls in older homes to drywalled garages in newer subdivisions. Different surfaces require different preparation approaches and different product selections, and our experience across so many GTA homes means we arrive at every project ready to handle whatever condition we find. Our licensed and insured painters carry full liability coverage and WSIB clearance, giving homeowners total peace of mind throughout the project.", "The combined effect of white painted interior walls and a fresh white roll-up door creates a garage that feels modern, organized, and well-maintained — qualities that extend the perceived value of the entire home. Whether the goal is personal enjoyment of the space, preparation for a sale, or simply catching up on maintenance that has been deferred too long, a garage painting project with Cornerstone Pro Painting delivers results that are immediately and dramatically visible.", "Do not overlook the garage any longer. Call Cornerstone Pro Painting at 437-242-3829 to get a free estimate for your GTA garage painting project. Our team will walk through the space with you, identify every surface that needs attention, and give you a clear picture of what the finished result will look like — and how we will get there."]},
+      "gallery-int-real-8.jpg": {"cat": "Interior", "title": "Living Room — Sage Green, Toronto", "paragraphs": ["Few interior colour choices carry the quiet power that a well-executed sage green does, and this Toronto living room project is a masterclass in why. The warm, muted green that wraps these walls works in perfect harmony with the crown moulding, the hardwood floors, and the soft warm lighting to create a space that feels grounded, sophisticated, and genuinely alive. This is not a colour that simply fills a room — it transforms one. And the transformation you see here is the result of skilled professional painters who understood exactly how to bring it to life.", "Sage green is one of the most requested interior paint colours in Toronto right now, and it is not hard to understand why. It draws from the natural world, creating an organic calm that is especially valuable in urban homes where greenery and open space can be scarce. But achieving a sage green that works — one that reads as intentional rather than murky or cold — requires both the right product selection and the right application technique. Our team at Cornerstone Pro Painting worked with these homeowners through a detailed colour consultation, testing samples across different sections of the room and evaluating how the colour shifted under different lighting conditions throughout the day before any final decision was made.", "The crown moulding in this Toronto living room is a particular point of pride. Clean crown moulding requires careful masking, steady cutting-in work, and a semi-gloss product that gives the moulding its own distinct presence against the matte wall surface. Our licensed and insured painters take this kind of detail work seriously — it is often the trim and moulding work that separates a truly professional paint job from one that merely looks good from a distance. Up close, every line is sharp, every junction is clean, and the transition between wall colour and trim white is precise throughout the entire room.", "Cornerstone Pro Painting has been serving Toronto homeowners since 2009, and living room repaints are among our most frequently requested interior painting services. The living room is the heart of the home — a space for relaxing, entertaining, and spending time with family — and the colour and quality of the walls shape the feel of every moment spent there. We understand the weight of that, which is why we approach every living room project with the kind of care that reflects how much the space matters to the people who live in it.", "Using premium, low-VOC interior paints, our team ensures that the finished room is not only beautiful but healthy — with minimal odour during application and a safe indoor environment once dry. The paint products we select are formulated for excellent coverage, rich colour depth, and long-lasting durability on high-use surfaces. When you are investing in a living room repaint, you want a result that looks just as good in five years as it does the week the crew packs up and leaves. That is the standard Cornerstone Pro Painting holds itself to on every project.", "If you are inspired by this sage green living room and wondering what a similar transformation could look like in your Toronto home, we would love to talk. Call Cornerstone Pro Painting at 437-242-3829 to book your free estimate and take the first step toward the living room you have been imagining."]},
+      "gallery-int-real-9.jpg": {"cat": "Interior", "title": "Hallway — Sage Green, Toronto", "paragraphs": ["A long hallway is one of the most technically demanding surfaces to paint beautifully, and yet when it is done right — as it is in this Toronto project — it becomes one of the most visually rewarding spaces in the home. This hallway, painted in the same warm sage green as the adjacent living room, demonstrates the power of a cohesive colour story carried consistently through a home. The hardwood floors, the recessed lighting, and the sage green walls work together to create a corridor that feels purposeful and elegant rather than like a forgotten transitional space. Cornerstone Pro Painting brought this vision to life, and the result is exactly the kind of work that earns us referrals across Toronto and the GTA.", "Painting a hallway presents specific technical challenges. The walls are narrow and run long, which means any inconsistency in sheen, roller texture, or lap marks becomes extremely visible when viewed from down the corridor. Professional painters know to maintain a wet edge, work in consistent sections, and use the right nap roller for the wall surface to avoid the textural irregularities that catch light unfavourably in a long, straight space. Our team uses techniques refined over years of interior painting work across Toronto to ensure that every hallway we paint looks flawless from every angle — including the one that reveals every flaw.", "The recessed lighting in this Toronto hallway creates a particularly demanding test for the paint finish. Recessed lighting casts downward pools of light that graze along the wall surface, making any imperfection in texture or coverage immediately visible. This is why our preparation phase is so thorough — we skim, fill, and sand the walls until the surface is as smooth as possible before any paint is applied. Our licensed and insured painters understand how lighting interacts with paint finishes, and we match product sheen levels to the conditions of each specific space. In a hallway like this one, a well-chosen eggshell finish provides the right balance between durability and visual smoothness.", "Cornerstone Pro Painting has been painting interior spaces across Toronto and the GTA since 2009, and the hallway is a part of the home we approach with the same respect we give to living rooms and bedrooms. It may be a transitional space, but it is one that shapes how a home feels to move through every day. A beautifully painted hallway creates a sense of flow and coherence that connects the rooms of a home in a way that is felt more than seen — until you see one done perfectly, and then it is impossible not to notice.", "The sage green colour used throughout this project was selected as part of a full interior colour consultation, and carrying it from the living room into the hallway was a deliberate design decision that our team supported from the beginning. Colour continuity in open-plan and semi-open interiors is something we think about carefully when advising clients, and the results in this Toronto home demonstrate how powerful that approach can be.", "If you are ready to transform the hallways and living spaces of your Toronto home with professional interior painting, call Cornerstone Pro Painting at 437-242-3829 for a free estimate. We would love to show you what is possible."]},
+      "gallery-int-real-10.jpg": {"cat": "Interior", "title": "Upper Hallway — Fresh White, Toronto", "paragraphs": ["There is a particular quality to a hallway painted in a perfectly executed fresh white — a crispness, a sense of lightness and spaciousness that no other colour can quite replicate. In this Toronto upper hallway project, that quality is on full display. The landing at the top of the stairs, the walls running along the upper floor corridor, and the trim and moulding details all come together in a finished result that feels like the home took a deep breath. Cornerstone Pro Painting completed this project as part of a larger multi-room interior repaint, and the upper hallway is among the most satisfying elements of the finished work.", "White is often misunderstood as a simple, neutral choice — but in practice, painting a space white well is genuinely demanding work. White shows every surface imperfection with complete honesty. It reveals every roller mark, every patch repair that was not feathered properly, every drip and lap line, every seam in the drywall that was not filled before the brush came out. Achieving the kind of flawless, serene white finish you see in this Toronto upper hallway requires thorough surface preparation, the right product, and the skilled hands of professional painters who understand that white is not a colour you can rush. Our team at Cornerstone Pro Painting approaches white paint projects with a depth of care that matches the unforgiving nature of the finish.", "The stair landing in this project received particular attention. It is a transitional space where the eye is naturally drawn — where someone descending the stairs gets their first look at the upper floor, and where the quality of the work is on constant display. The trim at the landing, the baseboard at the top of the staircase, and the ceiling junction were all cut in cleanly, giving the space that architectural crispness that distinguishes a professional job. Our licensed and insured painters have been completing stair landing and upper hallway repaints across Toronto and the GTA since 2009, and we have developed techniques specific to these transitionally complex spaces.", "The hardwood floors in this hallway, warm and rich in their natural tone, are beautifully complemented by the fresh white walls above. This is a combination that is timeless in Toronto interiors — one that works in Victorian-era homes in the east end just as well as in newer construction in the suburbs. Part of the value that Cornerstone Pro Painting brings to every project is an understanding of how colours and finishes interact with the existing elements of a home, and the white-on-hardwood pairing in this upper hallway is a perfect example of that.", "Interior painting in Toronto's upper floors also requires specific logistical consideration — working safely around stair railings, setting up in tight landing spaces, and protecting the hardwood below from drips and spills. Our crew handles these logistics with the professionalism and care that homeowners across the GTA have come to expect from us over more than fifteen years in business.", "To schedule a free estimate for your Toronto home's upper hallway, stair landing, or any other interior painting project, call Cornerstone Pro Painting at 437-242-3829. Fresh white walls are waiting, and we know exactly how to deliver them."]},
+      "gallery-int-real-11.jpg": {"cat": "Interior", "title": "Basement — Deep Blue, Toronto", "paragraphs": ["Basements rarely receive the painterly attention they deserve, and yet a well-chosen, expertly applied colour can turn a basement from an afterthought into one of the most compelling spaces in a Toronto home. This project captures that transformation in progress — a deep navy and slate blue taking shape on basement walls under recessed lighting, with the tools and equipment of a professional crew visible in the frame. It is an honest, in-progress shot that shows the work Cornerstone Pro Painting puts into every basement painting project, and the dramatic quality of this deep blue confirms why so many Toronto homeowners are choosing bold, saturated colours for below-grade spaces.", "Deep, saturated colours like navy and slate blue are having a significant moment in Toronto interior design, and basements are one of the spaces where they work most powerfully. In a room with lower natural light, a deep colour does not fight against the conditions — it leans into them, creating a cocooning sense of warmth and drama that makes the space feel intentional rather than dim. The recessed lighting in this Toronto basement activates the depth of the blue in a way that reveals its complexity — it shifts from cool and calm under bright overhead light to rich and moody in a lower-lit evening setting. That versatility is part of what makes deep blues such rewarding basement colour choices.", "The in-progress nature of this photo gives a clear look at the professional approach Cornerstone Pro Painting takes to basement painting. You can see the ladder positioning, the careful management of drop cloths on the floor, and the methodical section-by-section coverage that ensures consistent colour and sheen across the entire space. Our licensed and insured painters work with deliberate, organized technique — nothing is rushed, nothing is improvised. Deep colours require additional coats to achieve full opacity, particularly over lighter previous finishes, and our team builds that into the project plan from the outset rather than discovering it mid-project.", "Cornerstone Pro Painting has been completing basement interior painting projects across Toronto and the GTA since 2009, and we understand the unique challenges of these spaces — high humidity potential, uneven concrete or masonry surfaces, limited ventilation, and lighting conditions that make colour selection more complex than in above-grade rooms. We advise homeowners on appropriate primers for below-grade environments, select finish products that resist the moisture common in Toronto basements, and ensure adequate ventilation throughout the painting process. Our work is always done with the long-term performance of the finish in mind.", "A finished basement in the right colour becomes a destination in the home — a media room, a rec room, a home gym, a creative studio — rather than a place to store things and avoid. The investment in professional interior painting at the basement level pays off every time the space is used, and it pays off in real dollar terms when the home is eventually listed. Professionally painted spaces consistently show better and appraise higher than those with DIY paint jobs.", "If you are ready to transform your Toronto basement with bold, professional interior painting, call Cornerstone Pro Painting at 437-242-3829 for a free estimate. Let us discuss what a deep, dramatic colour could do for the most underutilized room in your home."]},
+      "gallery-ext-real-1.jpg": {"cat": "Exterior", "title": "Deck Restoration Before — Toronto", "paragraphs": ["Every restored deck begins with a moment of honest assessment, and this Toronto deck before photo captures that moment clearly. The wood is weathered, the grey of sun-bleached, rain-soaked timber visible across every board. The surface shows years of seasonal exposure — Toronto winters, humid summers, freeze-thaw cycles that raise grain and open cracks, UV radiation that strips whatever stain or sealer previously protected the wood. This is the typical condition of a deck that has not received professional maintenance for several years, and it is a condition that Cornerstone Pro Painting's team encounters regularly across Toronto and the GTA.", "What many homeowners do not realize when they look at a deck in this state is that the damage is almost always recoverable. Wood that looks like this — grey, dry, textured — can typically be restored to a beautiful, rich-toned surface with the right preparation and the right products. But the key word is preparation. Deck restoration is not a matter of simply applying stain over weathered wood. It requires cleaning, sanding, and in many cases a brightening treatment to open the wood grain and restore the pH balance that allows stain to penetrate and bond properly. Skipping preparation and going straight to application is the most common mistake made by homeowners attempting DIY deck staining — and it results in a finish that peels, flakes, or goes blotchy within a single season.", "Cornerstone Pro Painting has been completing deck staining and restoration projects across Toronto and the GTA since 2009, and our approach to every project begins with a thorough assessment of the wood's current condition. We identify boards that may need replacement before staining begins, check the structural integrity of the deck, look for signs of rot or mold in joints and beneath ledger boards, and develop a cleaning and preparation plan that accounts for the specific species and condition of the wood we are working with. Our licensed and insured painters bring the same professional discipline to exterior wood restoration that we bring to interior paint projects.", "There is also a significant practical argument for acting before a deck reaches a state more advanced than what you see here. Wood that is allowed to continue deteriorating past the point of recoverable weathering begins to develop structural compromise — raised fasteners, splitting boards, and compromised joints that require expensive carpentry repairs before any painting or staining can begin. Restoring a deck at the weathered-but-intact stage captured in this photo is substantially less expensive than allowing it to reach a point where boards need replacing.", "This Toronto deck was photographed prior to the full restoration process that Cornerstone Pro Painting completed. The after photos from this same project tell the rest of the story — a deck transformed from the state you see here into a beautiful, rich-toned surface that looks and feels like a natural part of the home it belongs to. The transformation is exactly the kind of result our exterior painting and wood restoration clients expect when they choose to work with us.", "If your Toronto or GTA deck is showing signs of weathering like this one, please do not wait another season. Call Cornerstone Pro Painting at 437-242-3829 for a free estimate and let us show you what professional deck restoration can do."]},
+      "gallery-ext-real-2.jpg": {"cat": "Exterior", "title": "Deck Staining After — Toronto", "paragraphs": ["The difference between the weathered before condition and the finished result you see in this photo is the difference between a liability and an asset — and it is the kind of transformation that Cornerstone Pro Painting delivers on every deck staining project we complete in Toronto and across the GTA. The rich, warm wood tones that emerge from properly prepared and expertly stained deck boards are extraordinary, and they tell a story about what professional exterior wood restoration can achieve. This Toronto deck went from grey and worn to genuinely beautiful, and the homeowners now have an outdoor space they are proud to use and share with guests throughout the season.", "The warm amber and honey tones of the fresh deck stain in this photo are the result of a multi-step process. The wood was cleaned thoroughly using a professional-grade deck cleaner that removes grey oxidation, mold, mildew, and previous stain residue. After cleaning and allowing adequate drying time, the surface was sanded to open the wood grain and create a smooth, receptive base. A brightener treatment was applied to restore the natural pH of the wood, which is critical for ensuring that the penetrating oil stain bonds deeply and evenly rather than sitting on the surface where it will eventually peel. Only then was the stain applied — in controlled, even strokes that ensure consistent colour depth across every board.", "Cornerstone Pro Painting uses premium, penetrating oil-based deck stains from trusted Canadian suppliers. These products are formulated specifically for the Canadian climate — designed to withstand the expansion and contraction cycles of wood in Ontario's freeze-thaw seasons, resist UV fading through long summer days, and repel the moisture that is the primary enemy of wood durability in the Toronto climate. The finish you see in this photo will maintain its beauty for multiple seasons when maintained correctly, and our team provides homeowners with guidance on what that maintenance looks like and when to plan for their next professional treatment.", "The boards in this Toronto deck have a warmth and depth after staining that goes well beyond their surface appearance. A properly stained deck is also a protected deck — the penetrating stain feeds the wood, helps it resist cracking and checking as it moves through seasonal moisture cycles, and seals the surface against the water infiltration that leads to rot and structural degradation. Every dollar spent on professional deck staining is a dollar invested in the longevity of the structure, and the aesthetic reward is simply the most visible part of that investment.", "Exterior painting and wood finishing projects like this one are a core service at Cornerstone Pro Painting. We bring the same preparation discipline, product knowledge, and execution standards to our exterior wood work as we do to our most visible interior painting projects. Our licensed and insured painters have restored hundreds of decks across Toronto and the GTA, and we know exactly what it takes to achieve the kind of finish captured in this after photo.", "If your Toronto deck is looking more like the before photo than this finished result, the right time to call is now — before the wood deteriorates further and the restoration becomes more involved. Reach out to Cornerstone Pro Painting at 437-242-3829 to schedule your free estimate and get your outdoor space ready to be enjoyed."]},
+      "gallery-ext-real-3.jpg": {"cat": "Exterior", "title": "Deck & Stairs Before — Toronto", "paragraphs": ["This photo captures a Toronto deck and staircase in the condition that many homeowners live with for years longer than they should — weathered wood, grey and dry at the surface, with the kind of worn, forgotten appearance that slowly drains the enjoyment from an otherwise beautiful outdoor space. The stairs, which endure more concentrated foot traffic than any other part of the deck, show the most significant weathering: raised grain, surface checking, and the grey pallor of wood that has been stripped of its protective finish and left exposed to multiple Ontario seasons without treatment. This is the kind of condition that Cornerstone Pro Painting sees regularly, and it is a condition we know exactly how to reverse.", "Deck stairs receive a disproportionate amount of punishment. Every footfall concentrates load on a small area, pushing moisture into the end grain of the treads and accelerating the weathering process. The end grain of deck treads is particularly vulnerable — it absorbs and releases moisture far more rapidly than the face grain of the boards, which causes the wood to check and crack from the inside out when staining and sealing is neglected. When a restoration project includes stairs in this condition, our team gives the stair treads specific preparation attention — additional sanding, close inspection for any structural compromise, and careful application of stain to ensure the end grain is sealed as completely as possible.", "Cornerstone Pro Painting has been completing exterior deck and stair restoration projects across Toronto and the GTA since 2009, and we have seen every stage of wood weathering that Toronto's climate can produce. Our restoration process starts with a thorough assessment of both the deck field and the staircase structure — checking every tread, riser, and stringer for signs of rot or compromised fasteners, and identifying any boards that should be replaced by a carpenter before staining begins. We never apply stain over structural issues, because a beautiful surface is no substitute for a safe one.", "For homeowners who have been putting off their deck and stair restoration, the before condition documented in this photo is an important reference point. This is not a deck that needed to be replaced — it is one that needed professional attention. Many homeowners in Toronto make the mistake of assuming that weathered wood has passed the point of restoration and that replacement is the only option. In most cases, that is simply not true. With the right cleaning, preparation, and product application, wood in this condition can be transformed into the rich, beautiful surface shown in the after photos from this same project.", "The stairs in particular present an opportunity that homeowners often overlook. A refinished staircase does not just look better — it becomes safer, with a surface that grips footwear properly and is free of the roughness and splinters that weathered wood develops over time. It is a practical improvement alongside an aesthetic one, and it is one that professional exterior painters in the GTA are well-equipped to deliver.", "Do not let another season go by watching your Toronto deck and stairs deteriorate further. Call Cornerstone Pro Painting at 437-242-3829 for a free, no-obligation estimate. Our team will assess your deck's current condition and give you a clear path to the outdoor space you deserve."]},
+      "gallery-ext-real-4.jpg": {"cat": "Exterior", "title": "Deck & Stairs After — Toronto", "paragraphs": ["The transformation from weathered and grey to richly stained and finished is never more satisfying to see than in a deck and stair project like this one. This Toronto after photo shows the completed result of a full deck and staircase restoration by Cornerstone Pro Painting — every board and tread brought back to life with a warm, even stain that makes the wood look nourished and intentional rather than exposed and forgotten. The stairs in particular are striking in their finished state: clean, consistent, and beautiful from the top landing all the way down to the ground level below.", "Achieving this result on a deck with integrated stairs requires careful coordination of the application process. The stair treads, risers, and stringers all need to be stained in the right sequence to avoid stepping on wet surfaces or leaving marks from equipment. Our team at Cornerstone Pro Painting plans the application sequence before work begins, ensuring that every surface gets fully coated without any foot traffic disruption during the drying windows between coats. This is the kind of logistical thinking that separates experienced exterior painters from those who approach the job without a proper plan.", "The stain colour selected for this Toronto deck project was chosen to complement the home's exterior palette — the warm wood tones working in dialogue with the siding, trim, and landscape elements around the deck. Part of the value that Cornerstone Pro Painting brings to every exterior painting and staining project is an understanding of the home as a whole. We think about how the deck colour interacts with the exterior of the house, how it reads in different light conditions, and how it will age over time. Our goal is never just a great-looking deck on day one — it is a great-looking deck that continues to represent the home beautifully through multiple seasons.", "The stair treads in this finished photo carry the stain with a depth and richness that comes from proper preparation. Properly prepared wood accepts penetrating stain at a molecular level — the oil carries pigment deep into the wood fibre rather than sitting as a film on the surface. This is why professionally stained decks last significantly longer between maintenance treatments than DIY applications over unprepared wood. The investment in proper preparation translates directly into the longevity of the finish and the protection of the wood underneath.", "Cornerstone Pro Painting is fully licensed and insured and has been serving Toronto and GTA homeowners with exterior painting, staining, and deck restoration services since 2009. Our exterior wood work is backed by the same guarantee of quality that our interior painting clients have come to rely on — we do not leave a project until the finish meets the standard documented in our quote, and we stand behind our work across the Toronto region.", "If your Toronto deck and stairs look more like the before than this beautiful finished result, call Cornerstone Pro Painting at 437-242-3829 to schedule your free estimate. The outdoor space you have been wanting is closer than you think — and we know exactly how to get you there."]},
+      "gallery-ext-real-5.jpg": {"cat": "Exterior", "title": "Full Exterior Repaint — Toronto", "paragraphs": ["A full exterior repaint is the most transformative project a homeowner can invest in, and the work Cornerstone Pro Painting delivers on projects like this Toronto full exterior repaint represents the highest expression of what professional painters can do for a home. The exterior of a house is its identity — the face it shows to the street, the neighbours, and the world — and a well-executed exterior repaint does not just improve curb appeal. It protects the building envelope, extends the life of the siding and trim, and communicates a level of pride and care that resonates with everyone who passes by.", "Exterior painting in Toronto demands a level of product knowledge and application skill that interior work does not require to the same degree. The finished surfaces are subjected to UV radiation, freeze-thaw cycling, wind-driven rain, humidity, and temperature extremes that can range sixty degrees Celsius from the coldest winter day to the hottest summer afternoon. Premium exterior paints are formulated to flex with these movements, resist moisture infiltration, and maintain their colour depth and sheen over years of exposure. Our team at Cornerstone Pro Painting selects products for Toronto exterior projects with the local climate always in mind, and we have built relationships with suppliers that give us access to professional-grade products that are not available in retail stores.", "The preparation phase of a full exterior repaint is where the project is won or lost. Our licensed and insured painters begin every exterior repaint with a thorough power wash to remove dirt, mold, mildew, and any loosely adhering paint. We follow with scraping and sanding of all areas where old paint has failed or lifted, caulking of every joint, seam, and gap in the exterior cladding and trim, and spot-priming of any bare wood or repaired areas. Only after this preparation is complete do we begin applying finish coats — and every surface gets the coverage specified in our quote, not the minimum needed to look acceptable on departure day.", "Cornerstone Pro Painting has been completing full exterior repaints across Toronto and the GTA since 2009. We understand the specific architectural character of Toronto's housing stock — the Victorian and Edwardian homes of the older neighbourhoods with their detailed trim and multiple paint surfaces, the mid-century brick semi-detached homes that define many GTA streets, and the newer construction that requires a different approach to surface prep and product selection. Every home is different, and we approach every exterior repaint with the specific knowledge and respect that difference deserves.", "A full exterior repaint also offers an opportunity to update a home's colour story — to move away from a palette that has felt dated and toward something that reflects the current style of the neighbourhood and the taste of the homeowners. Our team brings colour consultation expertise to every exterior project, helping homeowners think through body colour, trim colour, accent details, and door colour in a way that creates a cohesive, polished finished result.", "If your Toronto home is ready for a full exterior transformation, call Cornerstone Pro Painting at 437-242-3829 for a free, no-obligation estimate. Fifteen-plus years of expertise, fully licensed and insured, committed to results that stand the test of time and Toronto weather."]},
+      "gallery-ext-real-6.jpg": {"cat": "Exterior", "title": "Front Door Detail — Toronto", "paragraphs": ["The front door of a home communicates more than most homeowners realize. It is the focal point of the facade, the element that draws the eye as a visitor approaches, and the detail that often determines whether a home feels cared for and curated or simply maintained. In this Toronto project, a beautifully refinished espresso and warm brown arched single door in a high-gloss finish makes exactly the kind of statement that a front door should — confident, polished, and impossible to walk past without noticing. This is the work of Cornerstone Pro Painting, and it demonstrates the difference that professional door painting can make on any Toronto home.", "High-gloss door finishes are among the most technically demanding work in residential exterior painting. A gloss finish, by its very nature, amplifies every surface imperfection — every grain line, every old drip, every rough patch from a previous paint layer. Achieving the kind of smooth, near-mirror finish captured in this close-up photograph requires multiple rounds of sanding between coats, careful product selection, and an application technique refined through extensive practice. Our licensed and insured painters who handle front door refinishing projects have developed a specific approach to achieving gloss finishes that look flawlessly applied — consistent, bubble-free, and perfectly smooth at every viewing angle.", "The espresso and warm brown tone chosen for this Toronto front door is a sophisticated and timeless choice. It works on brick homes, on stucco, and on frame construction — against virtually any exterior body colour — because it carries the authority of a dark finish with the warmth of brown undertones that keep it from feeling cold or severe. It is a colour that photographs beautifully, shows well in all lighting conditions, and ages gracefully, gaining character as it weathers slightly through seasons of use. Our team helped guide this homeowner to this particular shade through a consultation process that considered the existing exterior palette, the architectural style of the home, and the homeowner's personal taste.", "Front door painting and refinishing is a service that Cornerstone Pro Painting has been delivering to Toronto homeowners for over fifteen years. It is a project that can typically be completed in a day, with minimal disruption to the household, and the return on the investment is immediate and substantial. Real estate professionals consistently report that front door colour and condition is one of the first things buyers notice when approaching a listed home — and a beautifully painted, high-gloss front door creates an impression that pays dividends whether the home is being sold or simply lived in.", "Beyond the aesthetic, a properly prepared and painted front door is also a better-protected one. Our team cleans, sands, and primes before applying finish coats, ensuring that the paint bonds to the substrate correctly and will not peel, chip, or crack with the seasonal expansion and contraction of the door. The finish you see in this photo is one that will endure through Toronto's challenging climate for years before requiring any touch-up.", "If your Toronto home's front door is ready for a professional refinish, call Cornerstone Pro Painting at 437-242-3829 for a free estimate. A single door can change everything about the way your home presents itself — and we know exactly how to make that change."]},
+      "gallery-ext-real-7.jpg": {"cat": "Exterior", "title": "Arched Front Entry — Black Door Refinish, Toronto", "paragraphs": ["There are front doors, and then there are entrances. The arched double front door captured in this Toronto project belongs definitively in the second category. Painted in a deep, flawless gloss black and framed by a stunning stone arch surround with a pendant lantern above, this entry is the kind that makes pedestrians stop, that makes visitors feel welcomed into something special, and that defines the character of the home from the street. The refinishing work delivered here by Cornerstone Pro Painting is among the most striking exterior paint projects in our portfolio, and it is a perfect example of what professional exterior door painting can achieve on a architecturally significant entry.", "Black high-gloss doors have become one of the most coveted exterior design elements in Toronto — and with good reason. Against a stone arch and warm masonry surround like the one in this project, the contrast is breathtaking. The black reads as both bold and classic, simultaneously modern and timeless, in a way that no other colour achieves with quite the same authority. But the look is only as powerful as the quality of the finish underneath it, and achieving a gloss black on double doors in an arched frame requires skill, patience, and the right approach to a large, complex surface.", "Our team at Cornerstone Pro Painting approached this Toronto door refinishing project with the same methodology we bring to all high-gloss exterior work. The existing finish was stripped and sanded thoroughly — multiple rounds of progressive sanding — until both door panels presented a surface smooth enough to carry a high-gloss product without telegraphing a single imperfection. The arched profile of the doors and the frame detail required careful handwork in areas where power sanding could not reach, and every corner of the decorative moulding was addressed before any primer or finish coat was applied. The pendant lantern and stone surround were protected throughout the process, and the finished installation was cleaned and polished before the homeowners saw the result.", "Cornerstone Pro Painting has been serving Toronto homeowners with exterior painting and door refinishing services since 2009, and our team brings a genuine appreciation for architectural detail to every project. A home with a feature entry like this one deserves professional painters who understand the visual weight of the work they are being asked to do — who can look at an arched double door in a stone surround and understand what it would take to do it justice. That is the perspective we bring, and the result you see in this photo reflects it.", "Front door and entry refinishing is one of the highest return-per-dollar investments available to Toronto homeowners. The impact on curb appeal is immediate and dramatic, and the practical benefits of a properly prepared and painted entry door — better weather resistance, improved seal integrity, longer finish life — are substantial in a climate as demanding as Toronto's.", "Whether your home has a statement entry like this one or a more modest front door that deserves a thoughtful update, Cornerstone Pro Painting has the skill and experience to deliver a result you will be proud of every time you come home. Call us at 437-242-3829 for a free estimate on your front door or exterior painting project."]},
+      "gallery-ext-real-8.jpg": {"cat": "Exterior", "title": "Porch & Railing Repaint — Black, Toronto", "paragraphs": ["The painted porch railings and lattice on this Toronto brick semi-detached home demonstrate how powerfully a well-chosen exterior colour can anchor the front facade of a house and give it a sense of completed, intentional design. The deep black porch railing and lattice work stand in crisp contrast against the warm brick of the home's exterior, creating a classic and timeless front presentation that reads as cared for and put-together from the street. This kind of exterior detail work is exactly what Cornerstone Pro Painting specializes in, and it is a service that Toronto homeowners across the GTA increasingly recognize as one of the best curb appeal investments they can make.", "Painting porch railings and lattice is detail work in the fullest sense of the phrase. The surfaces are complex — multiple small components, interior angles, open-frame sections, and attachment points to masonry, wood, or metal that each present their own preparation challenges. Achieving even coverage on a painted railing or lattice section requires careful product selection, the right application tools, and the patience to work thoroughly through every element of the structure. Our licensed and insured painters approach railing and lattice painting with an organized, methodical technique that ensures consistent coverage and a clean finished result — no drips, no runs, no bare spots in hidden corners.", "The black finish chosen for this Toronto porch is a decision that ages exceptionally well. Black metal and wood details on brick semi-detached homes are a classic combination in Toronto's residential architecture, and a fresh coat of the right black finish brings that combination forward in a way that feels contemporary without departing from the home's character. Our team helped this homeowner arrive at the right black — not all blacks are the same, and in an exterior context the sheen level, depth, and undertone of the black all interact with the brick colour, the natural light, and the surrounding landscape to produce a result that either works beautifully or falls slightly flat. Our colour consultation process helps homeowners avoid the latter.", "Cornerstone Pro Painting has been completing exterior painting projects for Toronto homeowners since 2009, and porch, railing, and front facade work is among the most satisfying work we do — because the results are so immediately visible and the transformation to curb appeal is so dramatic. A home that previously blended into the streetscape becomes one that anchors the block with confidence. That change happens at the hands of skilled exterior painters who understand materials, preparation, and the visual weight of colour used in an architectural context.", "The brick work on this Toronto semi-detached home was left to speak for itself, which is the right choice. The painted elements — railing, lattice, and adjacent trim — do the work of creating definition and contrast without competing with the warm, varied tones of the masonry. This is the kind of restraint that comes from experience, and it is the kind of guidance that sets Cornerstone Pro Painting apart from teams that simply apply whatever colour the homeowner requests without advising on the overall effect.", "To schedule a free estimate for your Toronto porch, railing, or exterior painting project, call Cornerstone Pro Painting at 437-242-3829. Let us talk about what the right colour choices can do for the front of your home."]},
+      "gallery-ext-real-9.jpg": {"cat": "Exterior", "title": "Porch Floor & Railing — Toronto", "paragraphs": ["The painted porch floor and matching railings captured in this Toronto project are a study in the power of coordinated exterior colour and quality craftsmanship. The deep black floor paint, applied with a professional finish that shows no brush marks and no lap lines even in the tight corners where the floor meets the railing posts, works in perfect harmony with the matching black railings to create a porch that feels designed rather than merely maintained. The warm cedar ceiling above provides a natural counterpoint to the dark floor and railings, and the overall composition is one of the most visually satisfying exterior details Cornerstone Pro Painting has delivered in Toronto.", "Painting a porch floor is technically demanding in a way that is not always obvious. The floor surface must be cleaned, de-gloss sanded, and primed before any finish coat is applied — because a porch floor paint that peels or chips within a season is not just an aesthetic failure, it is a safety concern. Our team at Cornerstone Pro Painting uses floor-specific exterior paint products formulated for the kind of foot traffic and weather exposure that Toronto porch floors endure — products that are impact-resistant, flexible through temperature cycles, and formulated with slip resistance in mind. The result is a floor finish that looks beautiful and performs for years under regular use.", "The railing in this project was finished with the same deep black, creating a visual continuity from floor to railing that gives the porch a sense of completeness and intention. Railing painting requires specific attention to the connection points between balusters, rails, and posts — areas where moisture can accumulate and where previous paint often fails first. Our licensed and insured painters clean and prime these areas with particular care, ensuring that the finish seals the most vulnerable sections of the railing against the water infiltration that leads to rot and premature paint failure. This attention to the most failure-prone areas of the structure is what distinguishes professional exterior painting from a DIY application.", "Cornerstone Pro Painting has been serving Toronto homeowners with exterior painting services since 2009, and porch floor and railing work is a service we complete with a consistent standard of quality that our clients across the GTA have come to rely on. We understand that the porch is a transitional space — part exterior, part living space — and we treat it accordingly. The products we select, the preparation we invest, and the application standards we hold reflect an understanding that this is a surface that needs to look good and perform well under conditions that are more demanding than either a pure interior or a pure exterior surface.", "The cedar ceiling visible above the porch in this Toronto project is a beautiful reminder that the best exterior colour work knows when to stop — when to let the natural material speak for itself and do the work of providing warmth and texture. The black floor and railing make the cedar glow, and the cedar makes the black feel grounded rather than heavy. That kind of spatial colour thinking is something Cornerstone Pro Painting brings to every exterior painting project, and it is why our finished results consistently exceed what clients imagine when they first reach out for a quote.", "Call Cornerstone Pro Painting at 437-242-3829 to schedule your free estimate for porch floor painting, railing refinishing, or any exterior painting project in Toronto or the GTA. We are ready to bring the same quality you see here to your home."]}
+    };
+
+    /* ── Modal logic ── */
+    var bg    = document.getElementById('gc-desc-bg');
+    var badge = document.getElementById('gc-desc-badge');
+    var title = document.getElementById('gc-desc-title');
+    var body  = document.getElementById('gc-desc-body');
+
+    function openModal(key) {
+      var d = GC_DESCRIPTIONS[key];
+      if (!d) return;
+      badge.textContent = d.cat;
+      title.textContent = d.title;
+      body.innerHTML = d.paragraphs.map(function(p){ return '<p>' + p + '</p>'; }).join('');
+      bg.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      bg.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('gc-desc-close').addEventListener('click', closeModal);
+    bg.addEventListener('click', function(e){ if (e.target === bg) closeModal(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+
+    document.querySelectorAll('.gc-more-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        openModal(btn.getAttribute('data-key'));
+      });
+    });
+  })();
+  </script>
+
+</body>
+</html>

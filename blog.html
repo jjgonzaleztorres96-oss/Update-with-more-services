@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Painting tips, pricing guides, and honest advice from Jay Gonzalez of Cornerstone Painting — Toronto's most-read painting blog." />
+  <title>Blog — Painting Tips, Costs &amp; Advice — Cornerstone Painting</title>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=37" />
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <button class="nav-estimate-btn" id="open-estimate" type="button" aria-label="Get a free estimate">Estimate</button>
+      <a href="index.html" class="logo"><img src="logo.webp" alt="Cornerstone Pro Painting" class="logo-img"></a>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown"><a href="services.html">Services</a><ul class="nav-dropdown"><li><a href="service-full-house-painting.html">Full House Painting</a></li><li><a href="service-bedroom-painting.html">Bedroom Painting</a></li><li><a href="service-living-room-painting.html">Living Room Painting</a></li><li><a href="service-dining-room-painting.html">Dining Room Painting</a></li><li><a href="service-kitchen-painting.html">Kitchen Painting</a></li><li><a href="service-bathroom-painting.html">Bathroom Painting</a></li><li><a href="service-basement-painting.html">Basement Painting</a></li><li><a href="service-hallway-painting.html">Hallway Painting</a></li><li><a href="service-staircase-painting.html">Staircase Painting</a></li><li><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a></li><li><a href="service-drywall-repair.html">Drywall Repair</a></li></ul></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="areas.html">Areas</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:+14372423829" class="nav-phone">437-242-3829</a>
+        <div class="nav-sep"></div>
+        <div class="nav-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+        <div class="nav-sep"></div>
+        <a href="index.html#contact" class="nav-cta">Free Quote</a>
+      </div>
+      <label class="hamburger" for="menu-toggle"><span></span><span></span><span></span></label>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="menu-toggle" />
+  <div class="mobile-menu">
+    <div class="mobile-svc-row">
+      <a href="services.html">Services</a>
+      <button class="mobile-svc-toggle" id="mobile-svc-toggle" aria-label="Toggle services menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+    <div class="mobile-svc-sub" id="mobile-svc-sub"><a href="service-full-house-painting.html">Full House Painting</a><a href="service-bedroom-painting.html">Bedroom Painting</a><a href="service-living-room-painting.html">Living Room Painting</a><a href="service-dining-room-painting.html">Dining Room Painting</a><a href="service-kitchen-painting.html">Kitchen Painting</a><a href="service-bathroom-painting.html">Bathroom Painting</a><a href="service-basement-painting.html">Basement Painting</a><a href="service-hallway-painting.html">Hallway Painting</a><a href="service-staircase-painting.html">Staircase Painting</a><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a><a href="service-drywall-repair.html">Drywall Repair</a></div>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="areas.html">Areas</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html#contact" class="m-cta">Free Quote</a>
+  </div>
+
+  <a href="tel:+14372423829" class="float-cta" aria-label="Call us">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 5.94 5.94l1.78-1.78a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <section class="blog-listing-section">
+    <div class="section-inner">
+
+      <div class="blog-listing-hd">
+        <p class="section-label">Blog</p>
+        <h2 class="blog-listing-title">Painting tips, costs &amp; advice.</h2>
+        <p class="blog-listing-sub">Real answers from a painting contractor who works in Toronto and the GTA every day.</p>
+      </div>
+
+      <div class="blog-grid">
+
+        <article class="blog-card blog-card--featured">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Pricing</span><span class="dot">&middot;</span><span>April 2026</span></div>
+            <h3><a href="blog-interior-painting-cost-toronto.html">How Much Does Interior Painting Cost in Toronto?</a></h3>
+            <p>After years of quoting interior jobs across Toronto, I can tell you the honest numbers — what affects the price and what you should watch out for.</p>
+            <a href="blog-interior-painting-cost-toronto.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Pricing</span><span class="dot">&middot;</span><span>April 2026</span></div>
+            <h3><a href="blog-exterior-painting-cost-toronto.html">How Much Does Exterior Painting Cost in Toronto?</a></h3>
+            <p>Exterior painting in Toronto is different from anywhere else. The climate here is brutal on paint, and pricing reflects that.</p>
+            <a href="blog-exterior-painting-cost-toronto.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Pricing</span><span class="dot">&middot;</span><span>March 2026</span></div>
+            <h3><a href="blog-cabinet-painting-cost-toronto.html">How Much Does Cabinet Painting Cost in Toronto?</a></h3>
+            <p>Cabinet painting has become one of our most requested services. Here's what it actually costs and why the range is so wide.</p>
+            <a href="blog-cabinet-painting-cost-toronto.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Advice</span><span class="dot">&middot;</span><span>March 2026</span></div>
+            <h3><a href="blog-cabinet-painting-vs-replacement.html">Cabinet Painting vs Cabinet Replacement: Which Is Better?</a></h3>
+            <p>I've seen both sides of this decision hundreds of times. Here's my honest take as someone who paints cabinets for a living.</p>
+            <a href="blog-cabinet-painting-vs-replacement.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>February 2026</span></div>
+            <h3><a href="blog-best-time-to-paint-exterior.html">When Is the Best Time of Year to Paint Your House Exterior?</a></h3>
+            <p>In Toronto, timing your exterior paint job is actually important. The wrong season can mean peeling paint within a year.</p>
+            <a href="blog-best-time-to-paint-exterior.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>February 2026</span></div>
+            <h3><a href="blog-prepare-home-before-painters.html">How to Prepare Your Home Before Painters Arrive</a></h3>
+            <p>A little prep on your end goes a long way. Here's exactly what to do — and what you don't need to worry about.</p>
+            <a href="blog-prepare-home-before-painters.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Advice</span><span class="dot">&middot;</span><span>January 2026</span></div>
+            <h3><a href="blog-questions-to-ask-painting-contractor.html">What to Ask Before Hiring a Painting Contractor</a></h3>
+            <p>I'm going to tell you what questions actually matter — including a few that most homeowners never think to ask.</p>
+            <a href="blog-questions-to-ask-painting-contractor.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>January 2026</span></div>
+            <h3><a href="blog-how-long-does-painting-take.html">How Long Does It Take to Paint a House?</a></h3>
+            <p>Real timelines based on real jobs — not optimistic estimates designed to win your business.</p>
+            <a href="blog-how-long-does-painting-take.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Maintenance</span><span class="dot">&middot;</span><span>December 2024</span></div>
+            <h3><a href="blog-how-often-repaint-interior.html">How Often Should You Repaint Your Home Interior?</a></h3>
+            <p>There's no single answer, but there are signs your interior is overdue — and I see them on almost every job I quote.</p>
+            <a href="blog-how-often-repaint-interior.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Maintenance</span><span class="dot">&middot;</span><span>December 2024</span></div>
+            <h3><a href="blog-how-often-repaint-exterior.html">How Often Should You Repaint Your Home Exterior?</a></h3>
+            <p>In Toronto's climate, exterior paint takes a serious beating. Here's the real timeline and what makes the difference.</p>
+            <a href="blog-how-often-repaint-exterior.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Inspiration</span><span class="dot">&middot;</span><span>November 2024</span></div>
+            <h3><a href="blog-best-paint-colors-modern-home.html">Best Paint Colors for a Modern Home</a></h3>
+            <p>I walk through a lot of homes. Here are the colours I see working consistently well in modern Toronto interiors.</p>
+            <a href="blog-best-paint-colors-modern-home.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Inspiration</span><span class="dot">&middot;</span><span>November 2024</span></div>
+            <h3><a href="blog-paint-colors-small-room.html">Best Paint Colors to Make a Small Room Look Bigger</a></h3>
+            <p>Paint can genuinely change how a room feels. Here's what actually works — beyond just "paint it white."</p>
+            <a href="blog-paint-colors-small-room.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>October 2024</span></div>
+            <h3><a href="blog-matte-vs-eggshell-vs-satin.html">Matte vs Eggshell vs Satin: Which Paint Finish Should You Choose?</a></h3>
+            <p>The finish you choose matters more than most people realize. I'll walk you through where each one actually belongs.</p>
+            <a href="blog-matte-vs-eggshell-vs-satin.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>October 2024</span></div>
+            <h3><a href="blog-interior-painting-checklist.html">Interior Painting Checklist for Homeowners</a></h3>
+            <p>Whether you're hiring professionals or doing it yourself, this checklist covers everything you need to think about before and during an interior paint job.</p>
+            <a href="blog-interior-painting-checklist.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>September 2024</span></div>
+            <h3><a href="blog-exterior-painting-checklist.html">Exterior Painting Checklist for Homeowners</a></h3>
+            <p>A proper exterior paint job requires more preparation than most people expect. Here's what should happen before and during the job.</p>
+            <a href="blog-exterior-painting-checklist.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Advice</span><span class="dot">&middot;</span><span>September 2024</span></div>
+            <h3><a href="blog-common-painting-mistakes.html">Common Painting Mistakes Homeowners Make</a></h3>
+            <p>I've been called in to fix a lot of DIY paint jobs over the years. These are the mistakes I see over and over again.</p>
+            <a href="blog-common-painting-mistakes.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Advice</span><span class="dot">&middot;</span><span>August 2024</span></div>
+            <h3><a href="blog-professional-vs-diy-painting.html">Why Professional Painting Looks Better Than DIY</a></h3>
+            <p>I'm not writing this to sell you on hiring us. I'm writing it because after years of doing this, I can explain exactly what makes the difference.</p>
+            <a href="blog-professional-vs-diy-painting.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Maintenance</span><span class="dot">&middot;</span><span>August 2024</span></div>
+            <h3><a href="blog-signs-home-needs-repaint.html">Signs Your Home Needs a Fresh Paint Job</a></h3>
+            <p>Most people wait too long. Here are the signs I look for when I walk through a home that tells me it's overdue.</p>
+            <a href="blog-signs-home-needs-repaint.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Advice</span><span class="dot">&middot;</span><span>July 2024</span></div>
+            <h3><a href="blog-paint-before-selling.html">Is It Worth Painting Your Home Before Selling?</a></h3>
+            <p>I've painted a lot of homes before they hit the market. Here's my honest take on whether it's worth the investment.</p>
+            <a href="blog-paint-before-selling.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>July 2024</span></div>
+            <h3><a href="blog-weather-affects-exterior-painting.html">How Weather Affects Exterior Painting in Ontario</a></h3>
+            <p>Ontario weather is genuinely challenging for exterior painting. Here's how we navigate it and what homeowners need to know.</p>
+            <a href="blog-weather-affects-exterior-painting.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Cabinet Painting</span><span class="dot">&middot;</span><span>June 2024</span></div>
+            <h3><a href="blog-spray-finish-kitchen-cabinets.html">What Is Spray Finish for Kitchen Cabinets?</a></h3>
+            <p>Spray finishing is one of the best things that happened to kitchen cabinet painting. Here's what it is, why it matters, and what to expect.</p>
+            <a href="blog-spray-finish-kitchen-cabinets.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Cabinet Painting</span><span class="dot">&middot;</span><span>May 2024</span></div>
+            <h3><a href="blog-can-you-paint-laminate-cabinets.html">Can You Paint Laminate Cabinets?</a></h3>
+            <p>The short answer is yes — with the right preparation. The longer answer is that laminate cabinets require a different approach than wood.</p>
+            <a href="blog-can-you-paint-laminate-cabinets.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Cabinet Painting</span><span class="dot">&middot;</span><span>May 2024</span></div>
+            <h3><a href="blog-how-long-cabinet-painting-lasts.html">How Long Does Cabinet Painting Last?</a></h3>
+            <p>This is probably the most common question I get after completing a cabinet job. Here's the honest answer.</p>
+            <a href="blog-how-long-cabinet-painting-lasts.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Commercial</span><span class="dot">&middot;</span><span>April 2024</span></div>
+            <h3><a href="blog-commercial-painting-cost-guide.html">Commercial Painting Cost Guide for Businesses</a></h3>
+            <p>Commercial painting pricing is different from residential. Here's what affects the cost and what businesses should budget.</p>
+            <a href="blog-commercial-painting-cost-guide.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Inspiration</span><span class="dot">&middot;</span><span>March 2026</span></div>
+            <h3><a href="blog-how-to-choose-paint-colors.html">How to Choose the Right Paint Colour for Any Room</a></h3>
+            <p>Choosing paint colour is harder than it looks. Here's the process I use with Toronto homeowners to land on colours they will love for years.</p>
+            <a href="blog-how-to-choose-paint-colors.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>February 2026</span></div>
+            <h3><a href="blog-painting-bathroom-toronto.html">Painting a Bathroom in Toronto: What You Need to Know</a></h3>
+            <p>Bathrooms are the room homeowners most often paint themselves — and the room where DIY paint jobs fail fastest. Here's what actually works in high-humidity spaces.</p>
+            <a href="blog-painting-bathroom-toronto.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>January 2026</span></div>
+            <h3><a href="blog-deck-staining-vs-painting.html">Deck Staining vs Deck Painting: Which Is Better for Toronto Homes?</a></h3>
+            <p>Should you stain or paint your deck? The honest answer depends on your wood species, current condition, and what you want maintenance to look like going forward.</p>
+            <a href="blog-deck-staining-vs-painting.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>December 2025</span></div>
+            <h3><a href="blog-garage-floor-epoxy-gta.html">Garage Floor Epoxy Coating in the GTA: What to Expect</a></h3>
+            <p>A grey concrete slab becomes a clean, glossy, easy-to-maintain surface. Here's what the process actually looks like from start to finish — and what it costs.</p>
+            <a href="blog-garage-floor-epoxy-gta.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>November 2025</span></div>
+            <h3><a href="blog-painting-staircase-railings.html">How to Paint Staircases and Railings the Right Way</a></h3>
+            <p>Staircases and railings get more contact wear than almost any surface in a home. Getting a finish that holds up is about product selection and preparation.</p>
+            <a href="blog-painting-staircase-railings.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Inspiration</span><span class="dot">&middot;</span><span>October 2025</span></div>
+            <h3><a href="blog-trim-paint-colors.html">Does Trim Always Have to Be White? A Painter's Honest Take</a></h3>
+            <p>White trim is almost universal in Toronto homes — and most of the time it's the right call. But there are situations where it works against the room. Here's when to break the rule.</p>
+            <a href="blog-trim-paint-colors.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Advice</span><span class="dot">&middot;</span><span>September 2025</span></div>
+            <h3><a href="blog-paint-new-construction.html">Painting a Newly Built Home: What Builders Don't Tell You</a></h3>
+            <p>Builder paint is almost always minimum quality. Here's what Toronto homeowners should know about upgrading the paint in a new build — and when to do it.</p>
+            <a href="blog-paint-new-construction.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Inspiration</span><span class="dot">&middot;</span><span>August 2025</span></div>
+            <h3><a href="blog-dark-paint-colors.html">Dark Paint Colours: What Toronto Homeowners Need to Know</a></h3>
+            <p>Deep navy, forest green, charcoal — dark colours are everywhere in Toronto interiors right now. They can be extraordinary. Here's what I tell homeowners before they commit.</p>
+            <a href="blog-dark-paint-colors.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>July 2025</span></div>
+            <h3><a href="blog-ceiling-paint-tips.html">Why Ceiling Paint Matters More Than You Think</a></h3>
+            <p>Most homeowners treat ceiling paint as an afterthought. The ceiling is the fifth wall — and how you treat it changes how the entire room reads.</p>
+            <a href="blog-ceiling-paint-tips.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>June 2025</span></div>
+            <h3><a href="blog-paint-smell-vocs.html">How Long Does Paint Smell Last? The Truth About VOCs</a></h3>
+            <p>Paint fumes are a real concern for families. Here's how long paint smell actually lasts, what VOCs are, and how to minimize them for children and pets.</p>
+            <a href="blog-paint-smell-vocs.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>May 2025</span></div>
+            <h3><a href="blog-touch-up-paint-tips.html">Why Touch-Up Paint Never Matches (And What to Do Instead)</a></h3>
+            <p>You saved the leftover paint. You applied it carefully. And now there's a visible patch. This is not a coincidence — here's what's actually happening and what actually works.</p>
+            <a href="blog-touch-up-paint-tips.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Advice</span><span class="dot">&middot;</span><span>April 2025</span></div>
+            <h3><a href="blog-painting-condo-toronto.html">Painting Your Toronto Condo: What Every Owner Should Know First</a></h3>
+            <p>Condo painting in Toronto has unique challenges — building rules, elevator booking, low-VOC requirements. Here's what to know before you start.</p>
+            <a href="blog-painting-condo-toronto.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Inspiration</span><span class="dot">&middot;</span><span>March 2025</span></div>
+            <h3><a href="blog-colour-trends-toronto-2026.html">Interior Paint Colour Trends in Toronto for 2026</a></h3>
+            <p>I walk through a lot of Toronto homes. Here's what's actually trending on walls across the city — and which ones are worth following.</p>
+            <a href="blog-colour-trends-toronto-2026.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Tips</span><span class="dot">&middot;</span><span>February 2025</span></div>
+            <h3><a href="blog-garage-door-painting.html">Garage Door Painting: When It Makes Sense and How It's Done</a></h3>
+            <p>The garage door takes up more facade area than almost anything else on the front of a Toronto home. A painted door transforms curb appeal at a fraction of replacement cost.</p>
+            <a href="blog-garage-door-painting.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <div class="blog-card-meta"><span>Inspiration</span><span class="dot">&middot;</span><span>January 2025</span></div>
+            <h3><a href="blog-accent-wall-ideas.html">Accent Walls: When They Work and When They're a Mistake</a></h3>
+            <p>The accent wall is one of the most requested paint treatments in Toronto — and one of the most frequently done wrong. Here's how to think about whether your space actually wants one.</p>
+            <a href="blog-accent-wall-ideas.html" class="blog-read-more">READ MORE &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="contact">
+    <div class="section-inner">
+      <div class="cta-inner">
+        <div>
+          <h2>Have a Project in Mind?</h2>
+          <p>Reading is great, but a free estimate is better. We respond within 12 hours.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:+14372423829" class="btn btn-dark">Call 437-242-3829</a>
+          <a href="index.html#contact" class="btn btn-outline-white">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <span class="footer-brand-main">CORNERSTONE</span>
+          <span class="footer-brand-sub">PAINTING</span>
+        </div>
+        <p class="footer-tagline">Painters you can trust in Toronto.<br>Serving the GTA since 2009.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Services</h5>
+        <ul>
+          <li><a href="services.html#interior">Interior Painting</a></li>
+          <li><a href="services.html#exterior">Exterior Painting</a></li>
+          <li><a href="services.html">Cabinet Painting</a></li>
+          <li><a href="services.html">Expert Spray Finishes</a></li>
+          <li><a href="services.html#commercial">Commercial Painting</a></li>
+          <li><a href="services.html">Specialty Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          <li><a href="areas.html">Areas Served</a></li>
+          <li><a href="services.html#process">Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-contact">
+        <h5 class="footer-col-head">Contact</h5>
+        <a href="tel:+14372423829" class="footer-phone">437-242-3829</a>
+        <ul class="footer-areas">
+          <li>Toronto, ON</li>
+          <li>Richmond Hill</li>
+          <li>Vaughan</li>
+          <li>Woodbridge</li>
+          <li>King City</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span>&copy; 2026 Cornerstone Painting. All rights reserved.</span>
+        <span>Toronto &amp; GTA Professional Painters</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Estimate Drawer -->
+  <div class="est-overlay" id="est-overlay" role="dialog" aria-modal="true" aria-label="Get a free estimate">
+    <div class="est-drawer">
+      <span class="est-handle"></span>
+      <div class="est-header">
+        <div class="est-header-text">
+          <span class="est-title">Get Your Free Estimate</span>
+          <span class="est-sub">2 min form — we reply within 12 hours</span>
+        </div>
+        <button class="est-close" id="est-close" aria-label="Close estimate form">&#x2715;</button>
+      </div>
+      <!-- Step indicators -->
+      <div class="est-steps">
+        <div class="est-step est-step--active" data-step="1">
+          <span class="est-step-dot">1</span>
+          <span class="est-step-label">The Job</span>
+        </div>
+        <div class="est-step-line"></div>
+        <div class="est-step" data-step="2">
+          <span class="est-step-dot">2</span>
+          <span class="est-step-label">Details</span>
+        </div>
+        <div class="est-step-line"></div>
+        <div class="est-step" data-step="3">
+          <span class="est-step-dot">3</span>
+          <span class="est-step-label">Contact</span>
+        </div>
+      </div>
+      <form id="est-form" novalidate>
+        <!-- Step 1: Service + Timeline -->
+        <div class="est-panel" data-panel="1">
+          <p class="est-q">What would you like painted?</p>
+          <div class="est-cards" id="est-service">
+            <label class="est-card">
+              <input type="radio" name="service" value="Interior Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E0;</span><span>Interior</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Exterior Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E1;</span><span>Exterior</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Cabinet Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1FA9F;</span><span>Cabinets</span></div>
+            </label>
+            <label class="est-card">
+              <input type="radio" name="service" value="Commercial Painting" />
+              <div class="est-card-face"><span class="est-card-icon">&#x1F3E2;</span><span>Commercial</span></div>
+            </label>
+          </div>
+          <!-- Rooms (shown only for Interior) -->
+          <div class="est-rooms-wrap" id="est-rooms-wrap" style="display:none">
+            <p class="est-q">How many rooms?</p>
+            <div class="est-pills" id="est-rooms">
+              <label class="est-pill"><input type="radio" name="rooms" value="1" /><span>1</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="2" /><span>2</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="3" /><span>3</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="4" /><span>4</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="5+" /><span>5+</span></label>
+              <label class="est-pill"><input type="radio" name="rooms" value="Whole house" /><span>Whole house</span></label>
+            </div>
+          </div>
+          <p class="est-q">When are you looking to start?</p>
+          <div class="est-pills" id="est-timeline">
+            <label class="est-pill"><input type="radio" name="timeline" value="ASAP" /><span>ASAP</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="Within 1 month" /><span>Within 1 month</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="1&#x2013;3 months" /><span>1&#x2013;3 months</span></label>
+            <label class="est-pill"><input type="radio" name="timeline" value="Just planning" /><span>Just planning</span></label>
+          </div>
+          <button type="button" class="btn btn-accent est-next" data-target="2" style="width:100%;justify-content:center">Next &#x2192;</button>
+        </div>
+        <!-- Step 2: Details -->
+        <div class="est-panel" data-panel="2" style="display:none">
+          <label class="est-label">Current wall / surface colour</label>
+          <input type="text" class="est-input" name="current_color" placeholder="e.g. Builder white, beige, not sure" />
+          <label class="est-label">Wall / surface condition</label>
+          <div class="est-pills">
+            <label class="est-pill"><input type="radio" name="condition" value="Good" /><span>Good</span></label>
+            <label class="est-pill"><input type="radio" name="condition" value="Minor repairs needed" /><span>Minor repairs</span></label>
+            <label class="est-pill"><input type="radio" name="condition" value="Major repairs needed" /><span>Major repairs</span></label>
+          </div>
+          <label class="est-label">Your area / neighbourhood</label>
+          <input type="text" class="est-input" name="area" placeholder="e.g. North York, Mississauga, Toronto" />
+          <label class="est-label">Add photos (optional, up to 3)</label>
+          <div class="est-upload" id="est-upload-zone">
+            <input type="file" id="est-photos" name="photos" accept="image/*" multiple />
+            <div class="est-upload-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span>Tap to add photos</span>
+              <span class="est-upload-hint">JPG or PNG, max 5 MB each</span>
+            </div>
+            <div class="est-previews" id="est-previews"></div>
+          </div>
+          <label class="est-label">Additional notes (optional)</label>
+          <textarea class="est-input" name="notes" rows="3" placeholder="Anything else we should know&#x2026;"></textarea>
+          <div class="est-nav-row">
+            <button type="button" class="est-back" data-target="1">&#x2190; Back</button>
+            <button type="button" class="btn btn-accent est-next" data-target="3">Next &#x2192;</button>
+          </div>
+        </div>
+        <!-- Step 3: Contact -->
+        <div class="est-panel" data-panel="3" style="display:none">
+          <p class="est-q">Almost done &#x2014; where should we send your estimate?</p>
+          <div class="est-row-2">
+            <div>
+              <label class="est-label">First name *</label>
+              <input type="text" class="est-input" name="first_name" placeholder="Jay" required />
+            </div>
+            <div>
+              <label class="est-label">Last name</label>
+              <input type="text" class="est-input" name="last_name" placeholder="Gonzalez" />
+            </div>
+          </div>
+          <label class="est-label">Phone number *</label>
+          <input type="tel" class="est-input" name="phone" placeholder="416-555-1234" />
+          <label class="est-label">Email address</label>
+          <input type="email" class="est-input" name="email" placeholder="you@email.com" />
+          <div class="est-nav-row">
+            <button type="button" class="est-back" data-target="2">&#x2190; Back</button>
+            <button type="submit" class="btn btn-accent est-submit-btn" id="est-submit">Send Request</button>
+          </div>
+          <p class="est-fine">Free estimate &#x2014; no obligation. We reply within 12 hours.</p>
+          <div id="est-status"></div>
+        </div>
+      </form>
+      <!-- Success state -->
+      <div class="est-success" id="est-success" style="display:none">
+        <div class="est-success-icon">&#x2713;</div>
+        <h3>Request Sent!</h3>
+        <p>We&#x2019;ll reach out within 12 hours with your free written estimate.</p>
+        <a href="tel:+14372423829" class="btn btn-accent" style="display:inline-flex;margin:0 auto">Call Us: 437-242-3829</a>
+      </div>
+    </div>
+  </div>
+  <script src="estimate.js"></script>
+
+  <script src="animations.js"></script>
+  <script>
+    var toggle = document.getElementById('mobile-svc-toggle');
+    var sub = document.getElementById('mobile-svc-sub');
+    if (toggle && sub) {
+      toggle.addEventListener('click', function() {
+        toggle.classList.toggle('open');
+        sub.classList.toggle('open');
+      });
+    }
+  </script>
+
+</body>
+</html>
