@@ -2199,6 +2199,86 @@ section { padding: 100px 32px; }
   max-width: 500px;
 }
 
+/* Team section */
+.about-team {
+  background: var(--linen);
+  padding: 100px 64px;
+}
+
+.about-team-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.about-team-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.about-team-headline {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 56px;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.about-member-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  background: var(--linen-2);
+}
+
+.about-member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.about-member-name {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.about-member-role {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.about-member-bio {
+  font-size: 0.925rem;
+  color: var(--muted);
+  line-height: 1.8;
+  font-style: italic;
+}
+
 /* Story section */
 .about-story {
   background: var(--linen);
@@ -2396,6 +2476,8 @@ section { padding: 100px 32px; }
 @media (max-width: 1024px) {
   .about-hero { padding: calc(var(--nav-h) + 80px) 48px 80px; }
   .about-hero h1 { font-size: clamp(2.8rem, 4vw, 4rem); }
+  .about-team { padding: 80px 48px; }
+  .about-team-grid { gap: 36px; }
   .about-story { padding: 80px 48px; }
   .about-story-inner { gap: 64px; }
   .about-values { padding: 0 48px 80px; }
@@ -2407,6 +2489,10 @@ section { padding: 100px 32px; }
   .about-hero { padding: calc(var(--nav-h) + 56px) 24px 72px; }
   .about-hero h1 { font-size: 2.6rem; }
   .about-hero-sub { font-size: 0.95rem; max-width: 100%; }
+  .about-team { padding: 64px 24px; }
+  .about-team-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-team-headline { margin-bottom: 40px; }
+  .about-member-photo { aspect-ratio: 4 / 3; }
   .about-story { padding: 64px 24px; }
   .about-story-inner { grid-template-columns: 1fr; gap: 52px; }
   .about-stats { flex-wrap: wrap; gap: 24px 0; }
@@ -2424,6 +2510,8 @@ section { padding: 100px 32px; }
 @media (max-width: 480px) {
   .about-hero { padding: calc(var(--nav-h) + 48px) 20px 64px; }
   .about-hero h1 { font-size: 2.1rem; }
+  .about-team { padding: 56px 20px; }
+  .about-member-photo { aspect-ratio: 3 / 2; border-radius: 8px; }
   .about-story { padding: 56px 20px; }
   .about-values { padding: 0 20px 56px; }
   .about-feat { gap: 16px; padding: 18px 0; }
