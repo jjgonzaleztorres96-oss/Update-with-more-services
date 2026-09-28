@@ -942,7 +942,7 @@ section { padding: 100px 32px; }
 /* ── Feature Cards ── */
 .feat-cards-section {
   background: var(--linen);
-  padding: 0 32px 64px;
+  padding: 0 32px 72px;
 }
 
 .feat-cards-grid {
@@ -955,51 +955,95 @@ section { padding: 100px 32px; }
 
 .feat-card {
   background: var(--white);
-  border-radius: 12px;
-  padding: 36px 32px 40px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.07);
   box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  min-height: 220px;
 }
 
-.feat-num {
+.feat-card-photo {
+  flex: 0 0 38%;
+  position: relative;
+  overflow: hidden;
+}
+
+.feat-card-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  margin-bottom: 18px;
+}
+
+.feat-card-body {
+  flex: 1;
+  padding: 22px 22px 26px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feat-icon-wrap {
   width: 44px;
   height: 44px;
-  border-radius: 8px;
-  background: rgba(196,96,42,0.07);
-  border: 1px solid rgba(196,96,42,0.15);
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid rgba(196,96,42,0.22);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
+  flex-shrink: 0;
 }
 
 .feat-icon-wrap svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   stroke: var(--accent);
+}
+
+.feat-num-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.feat-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.feat-num-dash {
+  flex: 0 0 28px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.45;
 }
 
 .feat-card h3 {
   font-family: 'Noto Serif', Georgia, serif;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--dark);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   letter-spacing: -0.01em;
+  line-height: 1.3;
 }
 
 .feat-card p {
-  font-size: 0.875rem;
+  font-size: 0.845rem;
   color: var(--muted);
   line-height: 1.72;
+  margin: 0;
 }
 
 /* ── Quote CTA bar ── */
@@ -3527,6 +3571,10 @@ a.areas-city-cell .area-city-desc {
   .services-header { grid-template-columns: 1fr; }
   .why-inner { grid-template-columns: 1fr; gap: 40px; }
   .feat-cards-grid { grid-template-columns: 1fr 1fr; }
+  .feat-card { min-height: 180px; }
+  .feat-card-photo { flex: 0 0 36%; }
+  .feat-card h3 { font-size: 0.95rem; }
+  .feat-card-body { padding: 18px 18px 20px; }
   .quote-cta-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
   /* How It Works — collapse from 5 to 2 cols */
   .how-steps { grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -3573,7 +3621,10 @@ a.areas-city-cell .area-city-desc {
   .trust-inner { gap: 20px; justify-content: flex-start; }
   .why-section { padding: 64px 20px 48px; }
   .feat-cards-grid { grid-template-columns: 1fr; }
-  .feat-cards-section { padding: 0 20px 48px; }
+  .feat-cards-section { padding: 0 20px 56px; }
+  .feat-card { flex-direction: column; min-height: auto; }
+  .feat-card-photo { flex: 0 0 auto; height: 180px; position: relative; }
+  .feat-card-body { padding: 20px 20px 24px; }
   .apart-divider { padding: 0 20px 56px; }
   .quote-cta-bar { padding: 0 20px 72px; }
   .quote-checks { gap: 16px; }
