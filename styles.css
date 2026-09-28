@@ -3991,7 +3991,7 @@ nav.nav--scrolled {
 .city-hero-section {
   background: var(--dark);
   color: var(--white);
-  padding: 120px 0 96px;
+  padding: calc(var(--nav-h) + 64px) 32px 96px;
   text-align: center;
 }
 .city-hero-section .hero-eyebrow {
@@ -4229,7 +4229,7 @@ nav.nav--scrolled {
 }
 @media (max-width: 600px) {
   .city-hero-section {
-    padding: 80px 0 64px;
+    padding: calc(var(--nav-h) + 48px) 20px 64px;
   }
   .city-hero-section h1 {
     font-size: 2.2rem;
