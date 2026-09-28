@@ -987,6 +987,13 @@ section { padding: 100px 32px; }
   flex-direction: column;
 }
 
+.feat-num-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
 .feat-icon-wrap {
   width: 44px;
   height: 44px;
@@ -997,7 +1004,6 @@ section { padding: 100px 32px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
   flex-shrink: 0;
 }
 
@@ -1005,13 +1011,6 @@ section { padding: 100px 32px; }
   width: 18px;
   height: 18px;
   stroke: var(--accent);
-}
-
-.feat-num-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
 }
 
 .feat-num {
@@ -1031,7 +1030,7 @@ section { padding: 100px 32px; }
 
 .feat-card h3 {
   font-family: 'Noto Serif', Georgia, serif;
-  font-size: 1.05rem;
+  font-size: 1.18rem;
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 10px;
