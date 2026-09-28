@@ -4136,10 +4136,6 @@ nav.nav--scrolled {
   transform: translateY(-4px);
   box-shadow: 0 10px 32px rgba(0,0,0,0.10);
 }
-.city-svc-icon {
-  font-size: 1.6rem;
-  margin-bottom: 16px;
-}
 .city-svc-card h3 {
   font-size: 1.05rem;
   font-weight: 700;
