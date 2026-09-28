@@ -262,7 +262,7 @@ nav {
   background: var(--nav-bg);
   z-index: 199;
   flex-direction: column;
-  padding: 32px 28px;
+  padding: 8px 28px 32px;
   overflow-y: auto;
 }
 
@@ -333,6 +333,7 @@ nav {
 }
 
 @media (max-width: 960px) {
+  :root { --nav-h: 96px; }
   .nav-links { display: none; }
   .nav-phone, .nav-sep, .nav-socials, .nav-cta { display: none; }
   .hamburger { display: flex; }
