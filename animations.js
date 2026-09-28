@@ -24,7 +24,7 @@
     { sel: '.service-card',    cls: 'will-animate',       stagger: true  },
     { sel: '.blog-card',       cls: 'will-animate',       stagger: true  },
     { sel: '.process-step',    cls: 'will-animate',       stagger: true  },
-    { sel: '.areas-city-cell', cls: 'will-animate',       stagger: false },
+    // areas-city-cell intentionally excluded — cells below fold stay visible
     { sel: '.quote-left',      cls: 'will-animate-left',  stagger: false },
     { sel: '.quote-right',     cls: 'will-animate-right', stagger: false },
   ];
