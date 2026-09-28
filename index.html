@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=37" />
+  <link rel="stylesheet" href="styles.css?v=40" />
 </head>
 <body>
 
@@ -60,13 +60,8 @@
 
   <input type="checkbox" id="menu-toggle" />
   <div class="mobile-menu">
-    <div class="mobile-svc-row">
-      <a href="services.html">Services</a>
-      <button class="mobile-svc-toggle" id="mobile-svc-toggle" aria-label="Toggle services menu">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
-    </div>
-    <div class="mobile-svc-sub" id="mobile-svc-sub"><a href="service-full-house-painting.html">Full House Painting</a><a href="service-bedroom-painting.html">Bedroom Painting</a><a href="service-living-room-painting.html">Living Room Painting</a><a href="service-dining-room-painting.html">Dining Room Painting</a><a href="service-kitchen-painting.html">Kitchen Painting</a><a href="service-bathroom-painting.html">Bathroom Painting</a><a href="service-basement-painting.html">Basement Painting</a><a href="service-hallway-painting.html">Hallway Painting</a><a href="service-staircase-painting.html">Staircase Painting</a><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a><a href="service-drywall-repair.html">Drywall Repair</a></div>
+    <a href="services.html">Services</a>
+    <div class="mobile-svc-sub"><a href="service-full-house-painting.html">Full House Painting</a><a href="service-bedroom-painting.html">Bedroom Painting</a><a href="service-living-room-painting.html">Living Room Painting</a><a href="service-dining-room-painting.html">Dining Room Painting</a><a href="service-kitchen-painting.html">Kitchen Painting</a><a href="service-bathroom-painting.html">Bathroom Painting</a><a href="service-basement-painting.html">Basement Painting</a><a href="service-hallway-painting.html">Hallway Painting</a><a href="service-staircase-painting.html">Staircase Painting</a><a href="service-kitchen-cabinet-painting.html">Kitchen Cabinet Painting</a><a href="service-drywall-repair.html">Drywall Repair</a></div>
     <a href="about.html">About</a>
     <a href="gallery.html">Gallery</a>
     <a href="areas.html">Areas</a>
@@ -817,28 +812,6 @@
   <script src="estimate.js"></script>
 
   <script src="animations.js"></script>
-  <script>
-    var toggle = document.getElementById('mobile-svc-toggle');
-    var sub = document.getElementById('mobile-svc-sub');
-    var menuChk = document.getElementById('menu-toggle');
-    function resetSvcMenu() {
-      if (toggle) toggle.classList.remove('open');
-      if (sub) sub.classList.remove('open');
-    }
-    if (toggle && sub) {
-      toggle.addEventListener('click', function() {
-        toggle.classList.toggle('open');
-        sub.classList.toggle('open');
-      });
-    }
-    if (menuChk) {
-      menuChk.addEventListener('change', function() {
-        if (!this.checked) resetSvcMenu();
-      });
-    }
-    window.addEventListener('pageshow', resetSvcMenu);
-  </script>
-
 
 </body>
 </html>
