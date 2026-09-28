@@ -554,6 +554,47 @@ nav {
   letter-spacing: 0.1em;
 }
 
+/* ── Brush-stroke CTA (hero) ── */
+.btn-brushstroke {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 52px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.brushstroke-bg {
+  position: absolute;
+  inset: -12px -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 24px);
+  pointer-events: none;
+  overflow: visible;
+}
+
+.brushstroke-bg path {
+  transition: fill 0.22s ease;
+}
+
+.btn-brushstroke:hover .brushstroke-bg path {
+  fill: #a34d22;
+}
+
+.btn-brushstroke > span {
+  position: relative;
+  z-index: 1;
+}
+
 /* ── Hero trust row ── */
 .hero-trust {
   display: flex;
@@ -3649,6 +3690,7 @@ a.areas-city-cell .area-city-desc {
   .hero-sub { display: block; font-size: 0.95rem; max-width: 100%; margin-bottom: 24px; }
   .hero-actions { flex-direction: column; gap: 12px; margin-bottom: 0; }
   .hero-actions .btn { display: block; text-align: center; width: 100%; box-sizing: border-box; }
+  .hero-actions .btn-brushstroke { display: flex; justify-content: center; width: 100%; box-sizing: border-box; padding: 22px 36px; }
   .hero-stats-bar .hst-val { font-size: 0.75rem; }
   .hero-stats-bar .hst-label { font-size: 0.52rem; }
   .hero-stat { padding: 14px 8px; }
