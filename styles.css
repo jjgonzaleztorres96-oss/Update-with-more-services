@@ -503,7 +503,7 @@ nav {
 }
 
 .eyebrow-pipe {
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.5);
   font-size: 0.75rem;
   line-height: 1;
   margin: 0 2px;
@@ -514,7 +514,7 @@ nav {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #fff;
 }
 
 .hero h1 {
