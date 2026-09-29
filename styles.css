@@ -4166,6 +4166,11 @@ textarea.est-input { resize: vertical; min-height: 72px; }
   transform: translateY(-5px);
   box-shadow: 0 12px 36px rgba(0,0,0,0.11);
 }
+a.feat-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
 /* ── Review-card hover lift ── */
 .review-card {
