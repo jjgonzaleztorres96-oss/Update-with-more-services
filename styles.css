@@ -1394,6 +1394,13 @@ section { padding: 100px 32px; }
   line-height: 1.65;
   margin: 0;
 }
+a.how-step {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity 0.22s ease;
+}
+a.how-step:hover { opacity: 0.78; }
 
 /* ── FAQ ── */
 .faq-section {
