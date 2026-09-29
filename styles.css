@@ -498,7 +498,7 @@ nav {
 .eyebrow-line {
   width: 36px;
   height: 1px;
-  background: var(--accent);
+  background: #fff;
   flex-shrink: 0;
 }
 
