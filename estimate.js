@@ -173,7 +173,7 @@
 
       var params = {
         from_name:    data.first_name + ' ' + data.last_name,
-        reply_to:     data.email || ('noreply@cornerstonepainting.ca'),
+        reply_to:     data.email || ('noreply@cornerstonepropainting.com'),
         phone:        data.phone,
         message:      message + photoNote,
         service_type: data.service,

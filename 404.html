@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Page Not Found — Cornerstone Pro Painting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=54" />
+  <style>
+    .not-found-section {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px 60px;
+    }
+    .not-found-code {
+      font-size: clamp(5rem, 20vw, 10rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--clr-accent, #c5966b);
+      font-family: 'Noto Serif', serif;
+      margin: 0 0 16px;
+    }
+    .not-found-title {
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+    .not-found-sub {
+      color: #666;
+      font-size: 1.05rem;
+      max-width: 480px;
+      margin: 0 auto 36px;
+    }
+    .not-found-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .not-found-links a {
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: opacity 0.18s;
+    }
+    .not-found-links a:hover { opacity: 0.8; }
+    .not-found-links .btn-primary {
+      background: var(--clr-accent, #c5966b);
+      color: #fff;
+    }
+    .not-found-links .btn-outline {
+      border: 2px solid currentColor;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <button class="nav-estimate-btn" id="open-estimate" type="button" aria-label="Get a free estimate">Estimate</button>
+      <a href="/" class="logo">
+        <img src="logo.webp" alt="Cornerstone Pro Painting" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown"><a href="services">Services</a><ul class="nav-dropdown"><li><a href="service-full-house-painting">Full House Painting</a></li><li><a href="service-bedroom-painting">Bedroom Painting</a></li><li><a href="service-living-room-painting">Living Room Painting</a></li><li><a href="service-dining-room-painting">Dining Room Painting</a></li><li><a href="service-kitchen-painting">Kitchen Painting</a></li><li><a href="service-bathroom-painting">Bathroom Painting</a></li><li><a href="service-basement-painting">Basement Painting</a></li><li><a href="service-hallway-painting">Hallway Painting</a></li><li><a href="service-staircase-painting">Staircase Painting</a></li><li><a href="service-kitchen-cabinet-painting">Kitchen Cabinet Painting</a></li><li><a href="service-drywall-repair">Drywall Repair</a></li></ul></li>
+        <li><a href="about">About</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="areas">Areas</a></li>
+        <li><a href="blog">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="tel:+14372423829" class="nav-phone">437-242-3829</a>
+        <div class="nav-sep"></div>
+        <div class="nav-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+        <div class="nav-sep"></div>
+        <a href="/#contact" class="nav-cta">Free Quote</a>
+      </div>
+      <label class="hamburger" for="menu-toggle"><span></span><span></span><span></span></label>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="menu-toggle" />
+  <div class="mobile-menu">
+    <div class="mobile-svc-row">
+      <a href="services">Services</a>
+      <button class="mobile-svc-toggle" id="mobile-svc-toggle" aria-label="Toggle services menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+    <div class="mobile-svc-sub" id="mobile-svc-sub"><a href="service-full-house-painting">Full House Painting</a><a href="service-bedroom-painting">Bedroom Painting</a><a href="service-living-room-painting">Living Room Painting</a><a href="service-dining-room-painting">Dining Room Painting</a><a href="service-kitchen-painting">Kitchen Painting</a><a href="service-bathroom-painting">Bathroom Painting</a><a href="service-basement-painting">Basement Painting</a><a href="service-hallway-painting">Hallway Painting</a><a href="service-staircase-painting">Staircase Painting</a><a href="service-kitchen-cabinet-painting">Kitchen Cabinet Painting</a><a href="service-drywall-repair">Drywall Repair</a></div>
+    <a href="about">About</a>
+    <a href="gallery">Gallery</a>
+    <a href="areas">Areas</a>
+    <a href="blog">Blog</a>
+    <a href="tel:+14372423829">437-242-3829</a>
+    <a href="/#contact" class="mobile-cta">Free Quote</a>
+  </div>
+
+  <!-- 404 Content -->
+  <section class="not-found-section">
+    <div class="not-found-code">404</div>
+    <h1 class="not-found-title">Page Not Found</h1>
+    <p class="not-found-sub">Sorry, this page doesn't exist or may have moved. Let us point you in the right direction.</p>
+    <div class="not-found-links">
+      <a href="/" class="btn-primary">Go to Homepage</a>
+      <a href="services" class="btn-outline">Our Services</a>
+      <a href="areas" class="btn-outline">Areas We Serve</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <span class="footer-brand-main">CORNERSTONE</span>
+          <span class="footer-brand-sub">PAINTING</span>
+        </div>
+        <p class="footer-tagline">Painters you can trust in Toronto.<br>Serving the GTA since 2009.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=61590434797763" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/cornerstonepropainting/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Services</h5>
+        <ul>
+          <li><a href="services">Interior Painting</a></li>
+          <li><a href="services">Exterior Painting</a></li>
+          <li><a href="services">Cabinet Painting</a></li>
+          <li><a href="services">Commercial Painting</a></li>
+          <li><a href="services">Drywall Repair</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 class="footer-col-head">Company</h5>
+        <ul>
+          <li><a href="about">About</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="areas">Areas Served</a></li>
+          <li><a href="services">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-contact">
+        <h5 class="footer-col-head">Contact</h5>
+        <a href="tel:+14372423829" class="footer-phone">437-242-3829</a>
+        <ul class="footer-areas">
+          <li>Toronto, ON</li>
+          <li>Richmond Hill</li>
+          <li>Vaughan</li>
+          <li>Woodbridge</li>
+          <li>King City</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span>© 2026 Cornerstone Painting. All rights reserved.</span>
+        <span>Toronto &amp; GTA Professional Painters</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('mobile-svc-toggle');
+    var sub = document.getElementById('mobile-svc-sub');
+    var menuChk = document.getElementById('menu-toggle');
+    function resetSvcMenu() {
+      if (toggle) toggle.classList.remove('open');
+      if (sub) sub.classList.remove('open');
+    }
+    if (toggle && sub) {
+      toggle.addEventListener('click', function() {
+        toggle.classList.toggle('open');
+        sub.classList.toggle('open');
+      });
+    }
+    if (menuChk) {
+      menuChk.addEventListener('change', function() {
+        if (!this.checked) resetSvcMenu();
+      });
+    }
+    window.addEventListener('pageshow', resetSvcMenu);
+  </script>
+
+</body>
+</html>
