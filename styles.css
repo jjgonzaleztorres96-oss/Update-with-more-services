@@ -425,8 +425,8 @@ nav {
 
 @media (max-width: 960px) {
   .hero-bg {
-    background-image: url('hero-bg.webp');
-    background-position: 30% center;
+    background-image: url('hero-mobile-painter.webp');
+    background-position: center 20%;
     opacity: 0.60;
   }
 }
