@@ -42,6 +42,20 @@
   "mainEntityOfPage": "https://www.cornerstonepropainting.com/blog-touch-up-paint-tips"
 }
 </script>
+
+  <script>
+    /* GA4 — loads only after cookie consent */
+    if (localStorage.getItem("csp_cookie_consent") === "accepted") {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window._gaLoaded = true;
+      var _gas = document.createElement("script");
+      _gas.src = "https://www.googletagmanager.com/gtag/js?id=G-VFBX6106FN";
+      _gas.async = true;
+      document.head.appendChild(_gas);
+      gtag("js", new Date()); gtag("config", "G-VFBX6106FN");
+    }
+  </script>
 </head>
 <body>
   <nav>
@@ -263,5 +277,6 @@
       if (chk) chk.addEventListener('change', function(){ if (!this.checked) reset(); });
       window.addEventListener('pageshow', reset);
     })();
-  </script></body>
+  </script>  <script src="cookies.js" defer></script>
+</body>
 </html>
