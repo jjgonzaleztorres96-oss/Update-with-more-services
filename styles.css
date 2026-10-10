@@ -4615,7 +4615,7 @@ nav.nav--scrolled {
 
 /* Service page responsive */
 @media (max-width: 900px) {
-  .svc-hero { height: 340px; }
+  .svc-hero { height: 380px; }
   .svc-hero-overlay { padding: 28px 24px; }
   .svc-intro {
     grid-template-columns: 1fr;
@@ -4636,7 +4636,7 @@ nav.nav--scrolled {
   .svc-intro .area-stat:nth-last-child(-n+2) { border-bottom: 0; }
 }
 @media (max-width: 600px) {
-  .svc-hero { height: 260px; }
+  .svc-hero { height: auto; aspect-ratio: 4 / 3; min-height: 280px; }
   .svc-body-inner { padding: 0 20px 60px; }
   .svc-step { grid-template-columns: 40px 1fr; gap: 16px; }
   .svc-step-num { font-size: 1.2rem; }
