@@ -599,6 +599,10 @@ nav {
 }
 
 /* ── Hero stats bar (pinned bottom of hero) ── */
+@keyframes stats-bar-in {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
 .hero-stats-bar {
   position: absolute;
   bottom: 0;
@@ -611,6 +615,7 @@ nav {
   border-top: 1px solid rgba(255,255,255,0.09);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  animation: stats-bar-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
 }
 
 .hero-stat {
@@ -3647,8 +3652,8 @@ a.areas-city-cell .area-city-desc {
   /* Why stats — keep 3 col but reduce padding */
   .why-stat { padding: 16px 14px; }
   .why-stat strong { font-size: 1.6rem; }
-  /* Hero */
-  .hero { align-items: flex-start; }
+  /* Hero — use small viewport height so stats bar sits above browser chrome */
+  .hero { align-items: flex-start; min-height: 100svh; }
   .hero-content { padding: 52px 24px 120px; }
   .hero-copy { max-width: 100%; text-align: left; }
   .hero-eyebrow { justify-content: flex-start; margin-top: 20px; margin-bottom: 20px; }
