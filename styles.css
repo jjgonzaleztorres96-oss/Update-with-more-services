@@ -1700,6 +1700,7 @@ a.how-step:hover { opacity: 0.78; }
 /* ── Footer ── */
 .site-footer {
   background: #0a0e12;
+  color: #fff;
 }
 
 .site-footer-inner {
