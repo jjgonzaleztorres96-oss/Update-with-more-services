@@ -96,11 +96,31 @@
     return true;
   }
 
+  function showFieldError(name, msg) {
+    var input = document.querySelector('[name="' + name + '"]');
+    if (!input) return;
+    var existing = input.parentNode.querySelector('.est-field-err');
+    if (existing) existing.remove();
+    var err = document.createElement('p');
+    err.className = 'est-field-err';
+    err.style.cssText = 'color:#e05252;font-size:0.78rem;margin:4px 0 0;';
+    err.textContent = msg;
+    input.parentNode.appendChild(err);
+    input.focus();
+  }
+
+  function clearFieldErrors() {
+    document.querySelectorAll('.est-field-err').forEach(function(e){ e.remove(); });
+  }
+
   function validateStep3() {
+    clearFieldErrors();
     var data = collectFormData();
-    if (!data.first_name) { alert('Please enter your first name.'); return false; }
-    if (!data.phone && !data.email) { alert('Please enter a phone number or email.'); return false; }
-    return true;
+    var valid = true;
+    if (!data.email) { showFieldError('email', 'Email address is required.'); valid = false; }
+    if (!data.phone) { showFieldError('phone', 'Phone number is required.'); valid = false; }
+    if (!data.first_name) { showFieldError('first_name', 'First name is required.'); valid = false; }
+    return valid;
   }
 
   function handlePhotoChange(input) {
