@@ -246,25 +246,14 @@
           <div class="gc-label"><p>Entryway Repaint — Toronto</p><button class="gc-more-btn" data-key="gallery-int-real-3.jpg">Read More</button></div>
         </div>
 
-        <!-- Condo amenity restoration carousel -->
-        <div class="gallery-card gc-full gc-carousel-card" data-cat="condo" id="gc-amenity-carousel">
-          <div class="gc-carousel-track" id="gc-amenity-track">
-            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-1.webp')"></div>
-            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-2.webp')"></div>
-            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-3.webp')"></div>
-            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-4.webp')"></div>
-            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-5.webp')"></div>
-          </div>
-          <button class="gc-carousel-btn gc-carousel-prev" id="gc-amenity-prev" aria-label="Previous">&#8249;</button>
-          <button class="gc-carousel-btn gc-carousel-next" id="gc-amenity-next" aria-label="Next">&#8250;</button>
-          <div class="gc-carousel-dots" id="gc-amenity-dots">
-            <span class="gc-dot active"></span>
-            <span class="gc-dot"></span>
-            <span class="gc-dot"></span>
-            <span class="gc-dot"></span>
-            <span class="gc-dot"></span>
-          </div>
+        <!-- Condo amenity restoration — click to open slideshow -->
+        <div class="gallery-card gc-wide" data-cat="condo" id="gc-amenity-thumb" style="cursor:pointer">
+          <div class="gc-img" style="background-image:url('gallery-condo-amenity-1.webp')"></div>
           <span class="gc-badge">Condo</span>
+          <div class="gc-slideshow-badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" opacity=".4"/><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".3"/><path d="M9 8l8 4-8 4V8z"/></svg>
+            5 photos
+          </div>
           <div class="gc-label"><p>Condo Amenity Restoration — Common Areas &amp; Gym, Toronto</p></div>
         </div>
 
@@ -782,28 +771,47 @@
 
   <script>
   (function() {
-    var track = document.getElementById('gc-amenity-track');
-    var dots = document.querySelectorAll('#gc-amenity-dots .gc-dot');
-    var prev = document.getElementById('gc-amenity-prev');
-    var next = document.getElementById('gc-amenity-next');
-    var total = 5, cur = 0;
+    var images = [
+      'gallery-condo-amenity-1.webp',
+      'gallery-condo-amenity-2.webp',
+      'gallery-condo-amenity-3.webp',
+      'gallery-condo-amenity-4.webp',
+      'gallery-condo-amenity-5.webp'
+    ];
+    var lb = document.getElementById('gc-amenity-lightbox');
+    var img = document.getElementById('gc-lb-img');
+    var counter = document.getElementById('gc-lb-counter');
+    var dots = document.querySelectorAll('#gc-lb-dots .gc-lb-dot');
+    var cur = 0;
+
     function goTo(i) {
-      cur = (i + total) % total;
-      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+      cur = (i + images.length) % images.length;
+      img.classList.add('fade');
+      setTimeout(function() {
+        img.src = images[cur];
+        img.classList.remove('fade');
+      }, 150);
+      counter.textContent = (cur + 1) + ' / ' + images.length;
       dots.forEach(function(d, idx) { d.classList.toggle('active', idx === cur); });
     }
-    if (prev && next) {
-      prev.addEventListener('click', function(e) { e.stopPropagation(); goTo(cur - 1); });
-      next.addEventListener('click', function(e) { e.stopPropagation(); goTo(cur + 1); });
+
+    var thumb = document.getElementById('gc-amenity-thumb');
+    if (thumb && lb) {
+      thumb.addEventListener('click', function() { cur = 0; goTo(0); lb.classList.add('open'); document.body.style.overflow = 'hidden'; });
+      document.getElementById('gc-lb-close').addEventListener('click', function() { lb.classList.remove('open'); document.body.style.overflow = ''; });
+      document.getElementById('gc-lb-prev').addEventListener('click', function(e) { e.stopPropagation(); goTo(cur - 1); });
+      document.getElementById('gc-lb-next').addEventListener('click', function(e) { e.stopPropagation(); goTo(cur + 1); });
       dots.forEach(function(d, idx) { d.addEventListener('click', function(e) { e.stopPropagation(); goTo(idx); }); });
-      // Auto-advance every 4s
-      var timer = setInterval(function() { goTo(cur + 1); }, 4000);
-      document.getElementById('gc-amenity-carousel').addEventListener('mouseenter', function() { clearInterval(timer); });
-      document.getElementById('gc-amenity-carousel').addEventListener('mouseleave', function() { timer = setInterval(function() { goTo(cur + 1); }, 4000); });
-      // Touch swipe
+      lb.addEventListener('click', function(e) { if (e.target === lb) { lb.classList.remove('open'); document.body.style.overflow = ''; } });
+      document.addEventListener('keydown', function(e) {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'ArrowRight') goTo(cur + 1);
+        if (e.key === 'ArrowLeft') goTo(cur - 1);
+        if (e.key === 'Escape') { lb.classList.remove('open'); document.body.style.overflow = ''; }
+      });
       var tx = 0;
-      track.addEventListener('touchstart', function(e) { tx = e.touches[0].clientX; }, {passive:true});
-      track.addEventListener('touchend', function(e) { var dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1); });
+      lb.addEventListener('touchstart', function(e) { tx = e.touches[0].clientX; }, {passive:true});
+      lb.addEventListener('touchend', function(e) { var dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1); });
     }
   })();
   </script>
@@ -830,5 +838,26 @@ if (menuChk) {
 window.addEventListener("pageshow", resetSvcMenu);
 </script>
   <script src="cookies.js" defer></script>
+
+  <!-- Amenity project lightbox -->
+  <div class="gc-lightbox" id="gc-amenity-lightbox" role="dialog" aria-modal="true" aria-label="Project photos">
+    <button class="gc-lb-close" id="gc-lb-close" aria-label="Close">&#x2715;</button>
+    <div class="gc-lb-img-wrap">
+      <button class="gc-lb-nav gc-lb-prev" id="gc-lb-prev" aria-label="Previous">&#8249;</button>
+      <img class="gc-lb-img" id="gc-lb-img" src="gallery-condo-amenity-1.webp" alt="Condo amenity restoration project" />
+      <button class="gc-lb-nav gc-lb-next" id="gc-lb-next" aria-label="Next">&#8250;</button>
+    </div>
+    <p class="gc-lb-caption">Condo Amenity Restoration &mdash; Common Areas &amp; Gym, Toronto</p>
+    <div class="gc-lb-footer">
+      <span class="gc-lb-counter" id="gc-lb-counter">1 / 5</span>
+      <div class="gc-lb-dots" id="gc-lb-dots">
+        <span class="gc-lb-dot active"></span>
+        <span class="gc-lb-dot"></span>
+        <span class="gc-lb-dot"></span>
+        <span class="gc-lb-dot"></span>
+        <span class="gc-lb-dot"></span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
