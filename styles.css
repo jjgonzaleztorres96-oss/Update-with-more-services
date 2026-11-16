@@ -3039,6 +3039,65 @@ a.how-step:hover { opacity: 0.78; }
 }
 .gc-desc-body p { margin-bottom: 16px; }
 .gc-desc-body p:last-child { margin-bottom: 0; }
+
+/* Gallery carousel card */
+.gallery-card.gc-full {
+  grid-column: 1 / -1;
+  aspect-ratio: 16/7;
+  cursor: default;
+}
+.gc-carousel-track {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+.gc-slide {
+  flex: 0 0 100%;
+  background-size: cover;
+  background-position: center;
+}
+.gc-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 4;
+  transition: background 0.2s;
+}
+.gc-carousel-btn:hover { background: rgba(0,0,0,0.75); }
+.gc-carousel-prev { left: 14px; }
+.gc-carousel-next { right: 14px; }
+.gc-carousel-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 4;
+}
+.gc-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  transition: background 0.25s;
+  cursor: pointer;
+}
+.gc-dot.active { background: #fff; }
+@media (max-width: 600px) {
+  .gallery-card.gc-full { aspect-ratio: 4/3; }
+  .gc-carousel-btn { width: 32px; height: 32px; font-size: 1rem; }
+}
 @media (max-width: 600px) {
   .gc-desc-box { padding: 32px 22px 36px; }
   .gc-desc-title { font-size: 1.15rem; }

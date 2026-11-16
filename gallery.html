@@ -88,12 +88,12 @@
 
       <div class="gallery-filter-bar">
         <div class="gallery-filters">
-          <button class="filter-btn active" data-filter="all">All <span class="fc">49</span></button>
+          <button class="filter-btn active" data-filter="all">All <span class="fc">50</span></button>
           <button class="filter-btn" data-filter="interior">Interior <span class="fc">27</span></button>
           <button class="filter-btn" data-filter="exterior">Exterior <span class="fc">14</span></button>
-          <button class="filter-btn" data-filter="condo">Condos <span class="fc">8</span></button>
+          <button class="filter-btn" data-filter="condo">Condos <span class="fc">9</span></button>
         </div>
-        <p class="gallery-count"><span id="gc-num">49</span> projects</p>
+        <p class="gallery-count"><span id="gc-num">50</span> projects</p>
       </div>
 
       <div class="gallery-grid">
@@ -244,6 +244,28 @@
           <div class="gc-img" style="background-image:url('gallery-int-real-3.jpg')"></div>
           <span class="gc-badge">Interior</span>
           <div class="gc-label"><p>Entryway Repaint — Toronto</p><button class="gc-more-btn" data-key="gallery-int-real-3.jpg">Read More</button></div>
+        </div>
+
+        <!-- Condo amenity restoration carousel -->
+        <div class="gallery-card gc-full gc-carousel-card" data-cat="condo" id="gc-amenity-carousel">
+          <div class="gc-carousel-track" id="gc-amenity-track">
+            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-1.webp')"></div>
+            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-2.webp')"></div>
+            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-3.webp')"></div>
+            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-4.webp')"></div>
+            <div class="gc-slide" style="background-image:url('gallery-condo-amenity-5.webp')"></div>
+          </div>
+          <button class="gc-carousel-btn gc-carousel-prev" id="gc-amenity-prev" aria-label="Previous">&#8249;</button>
+          <button class="gc-carousel-btn gc-carousel-next" id="gc-amenity-next" aria-label="Next">&#8250;</button>
+          <div class="gc-carousel-dots" id="gc-amenity-dots">
+            <span class="gc-dot active"></span>
+            <span class="gc-dot"></span>
+            <span class="gc-dot"></span>
+            <span class="gc-dot"></span>
+            <span class="gc-dot"></span>
+          </div>
+          <span class="gc-badge">Condo</span>
+          <div class="gc-label"><p>Condo Amenity Restoration — Common Areas &amp; Gym, Toronto</p></div>
         </div>
 
         <div class="gallery-card gc-wide" data-cat="condo">
@@ -755,6 +777,34 @@
         openModal(btn.getAttribute('data-key'));
       });
     });
+  })();
+  </script>
+
+  <script>
+  (function() {
+    var track = document.getElementById('gc-amenity-track');
+    var dots = document.querySelectorAll('#gc-amenity-dots .gc-dot');
+    var prev = document.getElementById('gc-amenity-prev');
+    var next = document.getElementById('gc-amenity-next');
+    var total = 5, cur = 0;
+    function goTo(i) {
+      cur = (i + total) % total;
+      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+      dots.forEach(function(d, idx) { d.classList.toggle('active', idx === cur); });
+    }
+    if (prev && next) {
+      prev.addEventListener('click', function(e) { e.stopPropagation(); goTo(cur - 1); });
+      next.addEventListener('click', function(e) { e.stopPropagation(); goTo(cur + 1); });
+      dots.forEach(function(d, idx) { d.addEventListener('click', function(e) { e.stopPropagation(); goTo(idx); }); });
+      // Auto-advance every 4s
+      var timer = setInterval(function() { goTo(cur + 1); }, 4000);
+      document.getElementById('gc-amenity-carousel').addEventListener('mouseenter', function() { clearInterval(timer); });
+      document.getElementById('gc-amenity-carousel').addEventListener('mouseleave', function() { timer = setInterval(function() { goTo(cur + 1); }, 4000); });
+      // Touch swipe
+      var tx = 0;
+      track.addEventListener('touchstart', function(e) { tx = e.touches[0].clientX; }, {passive:true});
+      track.addEventListener('touchend', function(e) { var dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1); });
+    }
   })();
   </script>
 
