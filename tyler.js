@@ -286,7 +286,15 @@
       }
     });
 
-    document.getElementById('tyler-close').addEventListener('click', closeChat);
+    document.getElementById('tyler-close').addEventListener('click', function (e) {
+      e.stopPropagation();
+      closeChat();
+    });
+
+    // Stop any click inside the panel from reaching the document handler
+    ui.chat.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
 
     // Close on outside click
     document.addEventListener('click', function (e) {
