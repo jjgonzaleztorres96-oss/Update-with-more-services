@@ -277,7 +277,8 @@
 
     buildQuestions(body);
 
-    ui.btn.addEventListener('click', function () {
+    ui.btn.addEventListener('click', function (e) {
+      e.stopPropagation();
       if (isOpen) {
         closeChat();
       } else {
