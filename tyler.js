@@ -214,7 +214,7 @@
       if (contact) {
         contact.scrollIntoView({ behavior: 'smooth' });
       } else {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        window.location.href = '/#contact';
       }
     });
     body.appendChild(cta);
