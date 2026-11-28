@@ -207,13 +207,14 @@
     var cta = document.createElement('button');
     cta.className = 'tyler-cta';
     cta.textContent = 'Get a Free Estimate →';
-    cta.addEventListener('click', function () {
-      var openBtn = document.getElementById('open-estimate');
-      if (openBtn) {
-        openBtn.click();
-        closeChat();
+    cta.addEventListener('click', function (e) {
+      e.stopPropagation();
+      closeChat();
+      var contact = document.getElementById('contact');
+      if (contact) {
+        contact.scrollIntoView({ behavior: 'smooth' });
       } else {
-        window.location.href = '/#contact';
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
       }
     });
     body.appendChild(cta);
