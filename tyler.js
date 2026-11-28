@@ -210,9 +210,10 @@
     cta.addEventListener('click', function (e) {
       e.stopPropagation();
       closeChat();
-      var contact = document.getElementById('contact');
-      if (contact) {
-        contact.scrollIntoView({ behavior: 'smooth' });
+      var onHome = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '';
+      if (onHome) {
+        var contact = document.getElementById('contact');
+        if (contact) { contact.scrollIntoView({ behavior: 'smooth' }); }
       } else {
         window.location.href = '/#contact';
       }
