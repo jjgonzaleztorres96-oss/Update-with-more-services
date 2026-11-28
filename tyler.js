@@ -21,7 +21,7 @@
     {
       id: 'services',
       text: 'What type of painting do you do?',
-      answer: 'Interior, exterior, condo, cabinet, and commercial painting. We handle everything from a single room refresh to a full commercial project across Toronto and the GTA.'
+      answer: 'Interior and exterior painting — both residential and commercial. We also specialize in cabinet painting, staining, condo painting, and feature walls. Whether it’s a single room or a full building, we’ve got it covered across the GTA.'
     },
     {
       id: 'timeline',
@@ -413,6 +413,16 @@
         ctaCall.href = PHONE_HREF;
         ctaCall.innerHTML = phoneIcon() + 'Call ' + PHONE;
         actions.appendChild(ctaCall);
+
+        var back = document.createElement('button');
+        back.className = 'tyler-back';
+        back.innerHTML = '← Back to questions';
+        back.addEventListener('click', function () {
+          body.innerHTML = '';
+          buildGreeting(body);
+          body.scrollTop = 0;
+        });
+        actions.appendChild(back);
 
         body.appendChild(actions);
         body.scrollTop = body.scrollHeight;
